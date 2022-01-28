@@ -1,3 +1,14 @@
+---
+title: Avoiding_bullets_game 
+author: 
+  name: dongjun-Yi
+  link: https://github.com/dongjun-Yi/avoiding-bullets-game
+categories: [Project]
+tags: [java]
+render_with_liquid: false
+---
+
+
 자바 GUI 그래픽과 스레드를 이용해서 만든 총알을 피하는 게임 
 
 [Github 바로가기!](https://github.com/dongjun-Yi/avoiding-bullets-game)
