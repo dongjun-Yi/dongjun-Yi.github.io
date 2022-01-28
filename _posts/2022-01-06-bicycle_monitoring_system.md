@@ -1,3 +1,12 @@
+---
+title: 라즈베리파이를 이용한 자전거 도난방지 시스템
+author:
+  name: dongjun-Yi
+  link: https://github.com/dongjun-Yi/Bicycle-Monitoring-System
+categories: [Project]
+tags: [python, raspberrypi, javascript]
+render_with_liquid: false
+---
 
  라즈베리파이를 이용하여 사용자의 자전거가 도난당하지 않게끔 자전거를 실시간으로 모니터링 한다.
  
