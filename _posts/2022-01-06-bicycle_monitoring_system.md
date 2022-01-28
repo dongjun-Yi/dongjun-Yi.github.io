@@ -1,5 +1,5 @@
 ---
-title: 라즈베리파이를 이용한 자전거 도난방지 시스템
+title: bicycle_monitoring_system
 author:
   name: dongjun-Yi
   link: https://github.com/dongjun-Yi/Bicycle-Monitoring-System
