@@ -290,7 +290,7 @@ public class Game extends JFrame implements Runnable{
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/90665186/149316155-331d68d8-62ae-4937-9742-70f633d8a751.gif)
 
-#### 느낀점
+### 느낀점
  자바를 배우고 문법과 기능들을 구현하기 위해 간단한 게임을 만들어 보았다.
 그래픽과 스레드는 나한테 많이 생소하여 코드 작성하는데 어려웠다. 간단한 게임에도 불구하고 플레이어 움직임, 
 총알이 날라 다니는 모습, 플레이어와 총알이 부딪혔을 때의 이벤트 처리 등 하나하나 코드로 작성해야되서 조금 복잡하기도 하고 
