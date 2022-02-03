@@ -24,7 +24,8 @@ api 호출을 이용한 마블 사이트
 
 내가만든 마블 웹사이트  ↓ ↓ ↓
 
-https://dj-marvel-site.netlify.app/
+[https://dj-marvel-site.netlify.app](https://dj-marvel-site.netlify.app/)
+
 
 
 웹사이트는 모바일 버전에서도 볼 수 있게 반응형 웹사이트로 만들었고 나름 만족스러운? 홈페이지가 나온것 같다
