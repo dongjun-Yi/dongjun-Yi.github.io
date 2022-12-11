@@ -2,7 +2,7 @@
 title: Avoiding_bullets_game 
 author: 
   name: dongjun-Yi
-  link: https://github.com/dongjun-Yi/avoiding-bullets-game
+  link: https://github.com/dongjun-Yi/avoiding-bullets-game22
 categories: [Project]
 tags: [java]
 render_with_liquid: false
