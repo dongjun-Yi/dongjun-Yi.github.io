@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: Dongjun's blog                          # the main title
 
-tagline: programmer   # it will display as the sub-title
+tagline: Hi   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   내가 끄적이는 곳
