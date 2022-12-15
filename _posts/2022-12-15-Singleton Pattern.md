@@ -1,3 +1,11 @@
+---
+title: 싱글톤 패턴
+author:
+  name: dongjun-Yi
+categories: [Design Pattern]
+tags: [java, design pattern]
+render_with_liquid: false
+---
 # Singleton Pattern
 
 - **싱글턴 패턴은 인스턴스가 오직 하나만 생성되는 것을 보장하고 어디에서든 이 인스턴스에 접근할 수 있도록 하는 디자인 패턴**
@@ -477,6 +485,8 @@ public class Logger {
 ```
 
 <aside>
-📖 references                                                                                                                                     정인상, 「JAVA 객체지향 디자인 패턴」, 한빛미디어
+📖 references
+
+정인상, 「JAVA 객체지향 디자인 패턴」, 한빛미디어
 
 </aside>
