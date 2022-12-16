@@ -17,7 +17,7 @@ render_with_liquid: false
     Account, Logger 클래스
     
 
-**Account.class**
+**Account.java**
 
 ```java
 public class Account {
@@ -55,7 +55,7 @@ public class Account {
 
 Account는 계좌를 생성하여 입금과 출금 기능을 제공한다.
 
-**Logger.class**
+**Logger.java**
 
 ```java
 public class Logger {
@@ -81,7 +81,7 @@ public class Logger {
 
  Logger 클래스는 log.txt파일에 입금/출금 내역을 기록하는 일을 수행한다.
 
-**Main**
+**Main.java**
 
 ```java
 public class Main {
@@ -108,7 +108,7 @@ dong1과 dong2의 계좌를 생성하여 입금과 출금을 기록하는 일을
 
 - 모든 Account 인스턴스가 하나의 Logger 인스턴스를 공유하도록 만들어야한다. 이를 위해          account 클래스를 수정하여 해결한다.
 
-**Account.class**
+**Account.java**
 
 ```java
 public class Account {
@@ -138,7 +138,7 @@ public class Account {
 }
 ```
 
-**Main**
+**Main.java**
 
 ```java
 public class Main {
@@ -170,7 +170,7 @@ public class Main {
 2. **생성자를 private으로 선언**
 3. **Logger 인스턴스를 생성 및 반환하는 getInstance() 메소드 정의**
 
-**Account.class**
+**Account.java**
 
 ```java
 public class Account {
@@ -206,7 +206,7 @@ public class Account {
 }
 ```
 
-**Logger.class**
+**Logger.java**
 
 ```java
 public class Logger {
@@ -237,7 +237,7 @@ public class Logger {
 
 ```
 
-**Main**
+**Main.java**
 
 ```java
 public class Main {
@@ -260,7 +260,7 @@ public class Main {
 
 - 위의 예제에서 싱글턴 패턴을 적용하여 하나의 Logger 인스턴스를 생성하여 공유하도록 설계가 가능했지만 이는 다중스레드에서는 적용이 되지 않는다. **왜냐하면 각각의 스레드들이 여러개의 인스턴스를 생성하기 때문이다.**
 
-**User.class**
+**User.java**
 
 ```java
 public class User extends Thread {
@@ -274,7 +274,7 @@ public class User extends Thread {
 }
 ```
 
-Main
+Main.java
 
 ```java
 public class Main {
@@ -304,7 +304,7 @@ public class Main {
 
 → synchronized를 이용해 race condition이 발생하지 않게 만든다.
 
-**Logger.class**
+**Logger.java**
 
 ```java
 public class Logger {
@@ -343,7 +343,7 @@ syncrhonized로 해결 가능하지만 synchronized 사용 시 내부적으로 �
 
 → synchronized의 비효율성을 해결하기 위해 dcl기법을 적용해 instance가 생성되었는지를 두번 체크하는 로직이다.
 
-**Logger.class**
+**Logger.java**
 
 ```java
 public class Logger {
@@ -386,7 +386,7 @@ dcl 기법으로 보완은 가능하지만 **명령어 reorder**가 발생할 �
 
 → 앞서 dcl 기법과 synchronzied 기법을 안쓰고 동시성 문제를 해결할 수 있다.
 
-**Logger.class**
+**Logger.javas**
 
 ```java
 public class Logger {

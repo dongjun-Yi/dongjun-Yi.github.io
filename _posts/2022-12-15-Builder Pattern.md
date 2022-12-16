@@ -88,7 +88,7 @@ public class Book{
 
 Main.java
 
-```c
+```java
 public class Main {
     public static void main(String[] args) {
       Book book1 = new Book(1L, "isbn1234");
@@ -109,7 +109,7 @@ immutable 객체란 외부에서 값을 변경할수 있는 객체를 뜻한다.
 - 생성자의 인자들 중에 필수적 인자와 선택적 인자가 혼합되어 있는 경우
 - immtuable 객체를 생성
 
-**Book.class**
+**Book.java**
 
 ```java
 public class Book {
@@ -200,7 +200,7 @@ public class Book {
 }
 ```
 
-Main
+Main.java
 
 ```java
 public class Main {
