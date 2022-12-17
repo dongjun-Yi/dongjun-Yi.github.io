@@ -6,8 +6,6 @@ categories: [Design Pattern]
 tags: [java, design pattern]
 render_with_liquid: false
 ---
-# Strategy Pattern
-
 - **스트래티지 패턴은 전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴이다.  여기에서 전략이란 문제를 해결하는 알고리즘으로 이해할 수 있다.**
 - 같은 문제를 해결하는 여러 알고리즘이 클래스 별로 캡슐화 되어 있고 이들이 필요할 때 교체할 수 있도록 함으로써 동일한 문제를 다른 알고리즘으로 해결할 수 있게 하는 디자인 패턴
 
@@ -17,7 +15,7 @@ Robot 클래스로 예를 들어 보자. 로봇은 아톰과 태권V가 있고, 
 
 ![Untitled1.png](/assets/images/Strategy Pattern/Untitled.png)
 
-**Robot.java**
+**Robot**
 
 ```java
 public abstract class Robot {
@@ -36,7 +34,7 @@ public abstract class Robot {
 }
 ```
 
-**TaekwonV.java**
+**TaekwonV**
 
 ```java
 public class TaekwonV extends Robot{
@@ -57,7 +55,7 @@ public class TaekwonV extends Robot{
 }
 ```
 
-**Atom.java**
+**Atom**
 
 ```java
 public class Atom extends Robot{
@@ -77,7 +75,7 @@ public class Atom extends Robot{
 }
 ```
 
-**Main.java**
+**Main**
 
 ```java
 public class Main {
@@ -120,7 +118,7 @@ TaekwonV와 Atom 클래스는 추상클래스를 상속하여 구현하여 공�
 
 ![Untitled1.png](/assets/images/Strategy Pattern/Untitled 2.png)
 
-Robot.java
+Robot
 
 ```java
 public abstract class Robot {
@@ -204,7 +202,7 @@ public class PunchStrategy implements AttackStrategy{
 }
 ```
 
-**Main.java**
+**Main**
 
 ```java
 public class Main {

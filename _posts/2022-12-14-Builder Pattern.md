@@ -6,15 +6,13 @@ categories: [Design Pattern]
 tags: [java, design pattern]
 render_with_liquid: false
 ---
-# Builder Pattern
-
 - **빌더 패턴은 복잡한 객체를 생성하는 방법과 표현하는 방법을 정의하는 클래스를 별도로 분리하여 서로 다른 표현이라도 이를 생성할 수 있는 동일한 절차를 제공하는 패턴**
 
 book 클래스를 예로 들어 살펴보자
 
 생성자의 인자가 많을 경우 일반적인 객체를 생성하는 방식은 다음과 같다. 
 
-**Book.java(Telescoping Constructor pattern)**
+**Book(Telescoping Constructor pattern)**
 
 ```java
 public class Book {
@@ -72,7 +70,7 @@ public class Book {
 
 → Setter 메소드로 각 속성의 값을 설정
 
-**Book.java**
+**Book**
 
 ```java
 public class Book{
@@ -86,7 +84,7 @@ public class Book{
 }
 ```
 
-Main.java
+Main
 
 ```java
 public class Main {
@@ -109,7 +107,7 @@ immutable 객체란 외부에서 값을 변경할수 있는 객체를 뜻한다.
 - 생성자의 인자들 중에 필수적 인자와 선택적 인자가 혼합되어 있는 경우
 - immtuable 객체를 생성
 
-**Book.java**
+**Book**
 
 ```java
 public class Book {
@@ -200,7 +198,7 @@ public class Book {
 }
 ```
 
-Main.java
+Main
 
 ```java
 public class Main {
@@ -223,7 +221,7 @@ public class Main {
 
 @builder 어노테이션 사용
 
-Book.java
+Book
 
 ```java
 import lombok.Builder;
@@ -243,7 +241,7 @@ public class Book {
 }
 ```
 
-Main.java
+Main
 
 ```java
 Book book1 = new Book.BookBuilder().id(2L)

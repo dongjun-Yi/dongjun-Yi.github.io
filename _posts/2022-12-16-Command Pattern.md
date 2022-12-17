@@ -6,15 +6,13 @@ categories: [Design Pattern]
 tags: [java, design pattern]
 render_with_liquid: false
 ---
-# Command Pattern
-
 - **커맨드 패턴은 이벤트가 발생했을 때 실행될 기능이 다양하면서도 변경이 필요한 경우에 이벤트를 발생 시키는 클래스를 변경하지 않고 재사용하고자 할때 사용하는 패턴**
 
 🚴🏼 눌리면 특정 기능을 수행하는 버튼의 예를 들어보자
 
 버튼을 눌렀을 때 램프의 불이 켜지는 프로그램을 개발하려면 버튼이 눌러졌음을 인식하는 Button 클래스, 불을 켜는 기능을 제공하는 Lamp 클래스가 필요하다. 그리고 버튼을 눌렀을 때 램프를 켜려면 Button 클래스는 Lamp 객체를 참조해야 한다.
 
-**Lamp.java**
+**Lamp**
 
 ```java
 public class Lamp {
@@ -24,7 +22,7 @@ public class Lamp {
 }
 ```
 
-**Button.java**
+**Button**
 
 ```java
 public class Button {
@@ -38,7 +36,7 @@ public class Button {
 }
 ```
 
-**Main.java**
+**Main**
 
 ```java
 public class Main {
@@ -101,7 +99,7 @@ public class AlarmOnCommand implements Command { // 알람을 울리는 기능�
 }
 ```
 
-**Button.java**
+**Button**
 
 ```java
 public class Button {
@@ -119,7 +117,7 @@ public class Button {
 }
 ```
 
-**Main.java**
+**Main**
 
 ```java
 public class Main{
