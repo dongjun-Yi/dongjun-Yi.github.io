@@ -6,9 +6,7 @@ categories: [Design Pattern]
 tags: [java, design pattern]
 render_with_liquid: false
 ---
-# Singleton Pattern
-
-- **싱글턴 패턴은 인스턴스가 오직 하나만 생성되는 것을 보장하고 어디에서든 이 인스턴스에 접근할 수 있도록 하는 디자인 패턴**
+**싱글턴 패턴은 인스턴스가 오직 하나만 생성되는 것을 보장하고 어디에서든 이 인스턴스에 접근할 수 있도록 하는 디자인 패턴**
     
     싱글턴 패턴이 왜 쓰는지 알기 위해 예를 통해 살펴보자
     

@@ -6,7 +6,7 @@ categories: [Design Pattern]
 tags: [java, design pattern]
 render_with_liquid: false
 ---
-- 데코레이터 패턴은 **기본 기능에** **추가할 수 있는 기능의 종류가 많은 경우**에 각 추가 기능을 Decorator 클래스로 정의한 후 필요한 Decorator 객체를 조합함으로써 **추가 기능의 조합을 설계**하는 방식
+데코레이터 패턴은 **기본 기능에** **추가할 수 있는 기능의 종류가 많은 경우**에 각 추가 기능을 Decorator 클래스로 정의한 후 필요한 Decorator 객체를 조합함으로써 **추가 기능의 조합을 설계**하는 방식
 
 데코레이터 패턴을 이해하기 위해 예를 들어보자
 
