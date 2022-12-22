@@ -3,7 +3,7 @@ title: Spring 프로젝트 환경설정
 author:
   name: dongjun-Yi
 categories: [Spring]
-tags: [java, design pattern]
+tags: [java, Spring]
 render_with_liquid: false
 ---
 [https://start.spring.io](https://start.spring.io/) 에서 스프링 부트의 환경 설정이 가능하며, 버전선택, 패키지 이름, 라이브러리 추가 등 스프링 부트에 필요한 설정들을 추가할 수 있다.
