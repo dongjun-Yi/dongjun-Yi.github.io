@@ -13,7 +13,7 @@ render_with_liquid: false
 
 ## 일반적인 웹 어플리케이션 구조
 
-![Untitled1.png](/assets/images/Spring_MemberManage_Ex/Untitled 1.png)
+![Untitled.png](/assets/images/Spring_MemberManage_Ex/Untitled.png)
 
 - 컨트롤러 : 웹 MVC의 컨트롤러 역할
 - 서비스 : 핵심 비즈니스 로직 구현
