@@ -6,7 +6,7 @@ categories: [Spring]
 tags: [java, Spring]
 render_with_liquid: false
 ---
-Bean이란?
+## Bean이란?
 
 ---
 
@@ -14,7 +14,7 @@ Bean이란?
 
 Spring 공식문서에 bean의 정의를 보면 spring 컨테이너에 의해 제어받는 어플리케이션의 구조인 객체를 뜻한다고 나와있다. 근데 여기서 IoC란 뭘까?
 
-IoC(Inversion of Control)
+## IoC(Inversion of Control)란?
 
 ---
 
@@ -31,7 +31,7 @@ IoC란 객체가 의존성을 생성하지 않고 정의하는 프로세스를 �
 public class MemberController {
     private final MemberService memberService;
 
-		@AutoWired
+    @AutoWired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
@@ -96,3 +96,8 @@ public class SpringConfig {
 ```
 
 `@Configuration` 어노테이션과 `@Bean` 어노테이션을 사용하여 작성자가 직접 스프링 컨테이너에 빈을 등록할 수 있다.
+
+<aside>
+📖 references 스프링 입문 -코드로 배우는 스프링 부트, 웹 MVC, DB접근 기술 by 김영한
+
+</aside>

@@ -42,3 +42,8 @@ Spring 웹 어플리케이션에서 브라우저에게 응답하는 방식은 �
 4. hello라는 객체가 반환되었으므로 JsonConverter가 동작되어 웹 브라우제에게 Json형태로 데이터가 응답된다.
 - 기본 문자처리: StringHttpMessageConverter
 - 기본 객체처리: MappingJackson2HttpMessageConverter
+
+<aside>
+📖 references 스프링 입문 -코드로 배우는 스프링 부트, 웹 MVC, DB접근 기술 by 김영한
+
+</aside>

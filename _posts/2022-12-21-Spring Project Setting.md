@@ -45,3 +45,8 @@ dependencies : 라이브러리와의 의존관계
 - **resources:templates/ +{ViewName}+ .html**
 
 - **웹 템플릿 엔진은 view code(html)와 data logic code(db connection)를 분리해주는 기능을 한다.**
+
+<aside>
+📖 references 스프링 입문 -코드로 배우는 스프링 부트, 웹 MVC, DB접근 기술 by 김영한
+
+</aside>
