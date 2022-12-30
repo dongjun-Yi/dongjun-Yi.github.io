@@ -1,5 +1,5 @@
 ---
-title: Spring-입문 4. 스프링 빈과 의존관계
+title: 스프링 빈과 의존관계
 author:
   name: dongjun-Yi
 categories: [Spring]

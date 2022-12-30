@@ -1,5 +1,5 @@
 ---
-title: Spring-입문 5. 데이터베이스 접근
+title: 스프링 데이터베이스 접근방식
 author:
   name: dongjun-Yi
 categories: [Spring]

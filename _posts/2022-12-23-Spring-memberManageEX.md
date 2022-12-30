@@ -1,5 +1,5 @@
 ---
-title: Spring-입문 3. 회원 관리 예제
+title: 스프링 회원 관리 예제
 author:
   name: dongjun-Yi
 categories: [Spring]

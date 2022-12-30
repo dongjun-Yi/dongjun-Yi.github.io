@@ -1,5 +1,5 @@
 ---
-title: Spring-핵심 원리 기본편 2. 스프링 컨테이너와 빈
+title: 스프링 컨테이너와 빈
 author:
   name: dongjun-Yi
 categories: [Spring]
@@ -11,8 +11,8 @@ render_with_liquid: false
 ---
 
 ```java
-ApplicationContext applicationContext = new 
-													AnnotationConfigApplicationContext(AppConfig.class);
+ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+									
 ```
 
 ApplicationContext를 스프링 컨테이너라고 한다.

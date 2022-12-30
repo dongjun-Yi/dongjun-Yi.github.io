@@ -1,5 +1,5 @@
 ---
-title: Spring-입문 6. AOP
+title: AOP
 author:
   name: dongjun-Yi
 categories: [Spring]
