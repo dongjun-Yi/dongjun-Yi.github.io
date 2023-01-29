@@ -5,7 +5,8 @@ author:
 categories: [java]
 tags: [java]
 render_with_liquid: false
----## 선언위치에 따른 변수의 종류
+---
+## 선언위치에 따른 변수의 종류
 
 ---
 
