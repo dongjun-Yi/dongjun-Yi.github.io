@@ -1,5 +1,5 @@
 ---
-title: marvel_website
+title: "[프로젝트] marvel_website"
 author:
   name: dongjun-Yi
   link: https://github.com/dongjun-Yi/marvel_website.git
