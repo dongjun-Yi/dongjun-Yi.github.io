@@ -1,5 +1,5 @@
 ---
-title: AOP
+title: "[Spring] AOP"
 author:
   name: dongjun-Yi
 categories: [Spring]

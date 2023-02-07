@@ -1,5 +1,5 @@
 ---
-title: 스프링 빈 생명주기 콜백
+title: "[Spring] 빈 생명주기 콜백"
 author:
   name: dongjun-Yi
 categories: [Spring]

@@ -1,5 +1,5 @@
 ---
-title: 스프링 데이터베이스 접근방식
+title: "[Spring] 데이터베이스 접근방식"
 author:
   name: dongjun-Yi
 categories: [Spring]

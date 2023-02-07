@@ -1,5 +1,5 @@
 ---
-title: 스프링 프로젝트 환경설정
+title: "[Spring] 프로젝트 환경설정"
 author:
   name: dongjun-Yi
 categories: [Spring]

@@ -1,5 +1,5 @@
 ---
-title: 스프링 빈과 의존관계
+title: "[Spring] 빈과 의존관계"
 author:
   name: dongjun-Yi
 categories: [Spring]

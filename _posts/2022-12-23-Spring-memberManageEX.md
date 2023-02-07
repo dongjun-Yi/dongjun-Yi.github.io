@@ -1,5 +1,5 @@
 ---
-title: 스프링 회원 관리 예제
+title: "[Spring] 회원 관리 예제"
 author:
   name: dongjun-Yi
 categories: [Spring]

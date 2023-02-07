@@ -1,5 +1,5 @@
 ---
-title: 스프링 컴포넌트 스캔
+title: "[Spring] 컴포넌트 스캔"
 author:
   name: dongjun-Yi
 categories: [Spring]

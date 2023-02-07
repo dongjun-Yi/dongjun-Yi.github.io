@@ -1,5 +1,5 @@
 ---
-title: 스프링 웹 개발 기초
+title: "[Spring] 웹 개발 기초"
 author:
   name: dongjun-Yi
 categories: [Spring]

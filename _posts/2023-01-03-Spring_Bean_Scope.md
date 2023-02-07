@@ -1,5 +1,5 @@
 ---
-title: 스프링 빈 스코프
+title: "[Spring] 빈 스코프"
 author:
   name: dongjun-Yi
 categories: [Spring]
