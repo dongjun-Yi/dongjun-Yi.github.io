@@ -1,5 +1,5 @@
 ---
-title: 커멘드 패턴
+title: "[Design Pattern] 커멘드 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

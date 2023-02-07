@@ -1,5 +1,5 @@
 ---
-title: 데코레이터 패턴
+title: "[Design Pattern] 데코레이터 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

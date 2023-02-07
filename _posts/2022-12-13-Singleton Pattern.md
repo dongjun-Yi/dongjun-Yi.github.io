@@ -1,5 +1,5 @@
 ---
-title: 싱글톤 패턴
+title: "[Design Pattern] 싱글톤 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

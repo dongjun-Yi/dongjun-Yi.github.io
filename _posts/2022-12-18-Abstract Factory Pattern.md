@@ -1,5 +1,5 @@
 ---
-title: 추상 팩토리 패턴
+title: "[Design Pattern] 추상 팩토리 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

@@ -1,5 +1,5 @@
 ---
-title: 브릿지 패턴
+title: "[Design Pattern] 브릿지 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

@@ -1,5 +1,5 @@
 ---
-title: 컴포지트 패턴
+title: "[Design Pattern] 컴포지트 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

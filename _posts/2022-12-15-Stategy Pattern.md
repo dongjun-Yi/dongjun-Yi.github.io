@@ -1,5 +1,5 @@
 ---
-title: 스트래티지 패턴
+title: "[Design Pattern] 스트래티지 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]

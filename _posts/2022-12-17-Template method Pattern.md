@@ -1,5 +1,5 @@
 ---
-title: 템플릿 메서드 패턴
+title: "[Design Pattern] 템플릿 메서드 패턴"
 author:
   name: dongjun-Yi
 categories: [Design Pattern]
