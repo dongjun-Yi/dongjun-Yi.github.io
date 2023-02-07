@@ -1,5 +1,5 @@
 ---
-title: Avoiding_bullets_game 
+title: "[프로젝트] Avoiding_bullets_game"
 author: 
   name: dongjun-Yi
   link: https://github.com/dongjun-Yi/avoiding-bullets-game
