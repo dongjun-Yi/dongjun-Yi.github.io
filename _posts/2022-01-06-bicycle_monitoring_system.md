@@ -1,5 +1,5 @@
 ---
-title: bicycle_monitoring_system
+title: "[프로젝트] bicycle_monitoring_system"
 author:
   name: dongjun-Yi
   link: https://github.com/dongjun-Yi/Bicycle-Monitoring-System
