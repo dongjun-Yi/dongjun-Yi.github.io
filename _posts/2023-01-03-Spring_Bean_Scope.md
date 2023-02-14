@@ -43,7 +43,7 @@ render_with_liquid: false
 
 **프로토타입 빈 요청1**
 
-![Untitled1.png](/assets/images/Spring_Bean_Scope/Untitled1.png)
+![Untitled1.png](/assets/images/Spring_Bean_Scope/Untitled 1.png)
 
 1. 프로토타입 스코프의 빈을 스프링 컨테이너에 요청한다.
 
@@ -51,7 +51,7 @@ render_with_liquid: false
 
 프로토타입 빈 요청2
 
-![Untitled2.png](/assets/images/Spring_Bean_Scope/Untitled2.png)
+![Untitled2.png](/assets/images/Spring_Bean_Scope/Untitled 2.png)
 
 3. 스프링 컨테이너는 생성한 프로토타입 빈을 클라이언트에 반환한다.
 
@@ -105,7 +105,7 @@ clientBean이라는 싱글톤 빈이 의존관계 주입을 통해서 프로토�
 
 **싱글톤에서 프로토타입 빈 사용1**
 
-![Untitled3.png](/assets/images/Spring_Bean_Scope/Untitled3.png)
+![Untitled3.png](/assets/images/Spring_Bean_Scope/Untitled 3.png)
 
 - clientBean 은 싱글톤이므로, 보통 스프링 컨테이너 생성 시점에 함께 생성되고, 의존관계 주입도
 발생한다.
@@ -117,7 +117,7 @@ clientBean이라는 싱글톤 빈이 의존관계 주입을 통해서 프로토�
 
 **싱글톤에서 프로토타입 빈 사용2**
 
-![Untitled4.png](/assets/images/Spring_Bean_Scope/Untitled4.png)
+![Untitled4.png](/assets/images/Spring_Bean_Scope/Untitled 4.png)
 
 - 클라이언트 A는 clientBean 을 스프링 컨테이너에 요청해서 받는다.싱글톤이므로 항상 같은
 clientBean 이 반환된다.
@@ -127,7 +127,7 @@ count값이 1이 된다.
 
 **싱글토에서 프로토타입 빈 사용3**
 
-![Untitled5.png](/assets/images/Spring_Bean_Scope/Untitled5.png)
+![Untitled5.png](/assets/images/Spring_Bean_Scope/Untitled 5.png)
 
 - 클라이언트 B는 clientBean 을 스프링 컨테이너에 요청해서 받는다.싱글톤이므로 항상 같은 clientBean 이 반환된다.
 - **여기서 중요한 점이 있는데, clientBean이 내부에 가지고 있는 프로토타입 빈은 이미 과거에 주입이 끝난
@@ -260,7 +260,7 @@ public int logic() {
 
 **HTTP request 요청 당 각각 할당되는 request 스코프**
 
-![Untitled6.png](/assets/images/Spring_Bean_Scope/Untitled6.png)
+![Untitled6.png](/assets/images/Spring_Bean_Scope/Untitled 6.png)
 
 ## **request 스코프 예제**
 
@@ -474,7 +474,7 @@ public class LogDemoService {
 
 **프록시 동작 원리**
 
-![Untitled7.png](/assets/images/Spring_Bean_Scope/Untitled7.png)
+![Untitled7.png](/assets/images/Spring_Bean_Scope/Untitled 7.png)
 **가짜 프록시 객체는 요청이 오면 그때 내부에서 진짜 빈을 요청하는 위임 로직이 들어있다.**
 
 - 가짜 프록시 객체는 내부에 진짜 myLogger를 찾는 방법을 알고 있다.
