@@ -56,7 +56,7 @@ Tv t = new CaptionTv();
 
 위의 코드를 그림으로 나타내면 다음과 같다.
 
-![Untitled.png](/assets/images/Java_Polymorphism/Untitled 1.png)
+![Untitled.png](/assets/images/Java_Polymorphism/1.png)
 
 
 Tv타입의 참조변수로는 CaptionTv 인스턴스 중에서 Tv클래스의 멤버들만 사용할 수 있다. 따라서 생성된 CaptionTv 인스턴스의 멤버 중에서 Tv클래스에 정의 되지 않은 멤버, text와 caption()은 참조변수 t로 사용이 불가능하다. 둘 다 같은 타입의 인스턴스지만 참조변수의 타입에 따라 사용할 수 있는 멤버의 개수가 달라진다.
