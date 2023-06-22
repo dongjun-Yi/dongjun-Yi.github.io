@@ -17,7 +17,7 @@ render_with_liquid: false
 
 **클래스 다이어그램**
 
-![Untitled.png](/assets/images/Template Pattern/Untitled.png)
+![Untitled.png](/assets/images/Template_Pattern/Untitled.png)
 
 또한 엘레베이터의 이동방향(위, 아래)과 모터의 상태(정지, 이동 중), 문의 상태(닫힘, 열림)를 나태내주는 변수들이 필요하므로 이 변수들을 enum class에 따로 생성하게 되면 다음과 같다.
 
@@ -200,7 +200,7 @@ public class LGMotor extends Motor {
 
 **클래스 다이어그램**
 
-![Untitled1.png](/assets/images/Template Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Template_Pattern/1.png)
 
 Motor
 
@@ -264,7 +264,7 @@ public class LGMotor extends Motor {
 
 - **템플릿 메소드 패턴은 전체적인 알고리즘을 구현하면서 상이한 부분은 하위클래스에서 구현할 수 있도록 해주는 디자인 패턴으로서 전체적인 알고리즘의 코드를 재사용하는데 유용하다.**
 
-![Untitled2.png](/assets/images/Template Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Template_Pattern/2.png)
 
 - AbstractClass : 템플릿 메소드를 정의하는 클래스. 하위 클래스에 공통 알고리즘을 정의하고 하위 클래스에서 구현될 기능을 primitive 메소드 또는 hook 메소드로 정의하는 클래스.
 - ConcreteClass : 물려받은 primitive 메소드나 hook 메소드를 구현하는 클래스. 상위 클래스에 구현된 템플릿 메소드의 일반적인 알고리즘에서 하위 클래스에 적합하게 primitive 메소드나 hook 메소드를 override하는 클래스.

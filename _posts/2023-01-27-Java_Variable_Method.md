@@ -147,7 +147,7 @@ class CallStackTest {
 
 위의 실행결과를 그림으로 살펴보면
 
-![Untitled.png](/assets/images/Java_Variable_Method/Untitled 1.png)
+![Untitled.png](/assets/images/Java_Variable_Method/1.png)
 
 예제를 실행하면 JVM이 main메서드를 호출하여 먼저 main이 실행되고, main이 `firstMethod()`를 호출하여 (3)처럼 호출스택에 firstMethod가 위에 쌓여 있는것을 볼 수 있다. firstMethod가 `secondMethod()`를 호출하여 secondMethod()가 실행되고 `println`을 호출하여 화면에 출력한다. 출력한 후 `println()`은 호출스택에서 사라지고 `sceondMethod()`도 종료하여 호출스택에서 제거된다. `firstMethod()`도 더 이상 실행할 코드가 없어 호출스택에서 제거되고 main도 더 이상 수행할 코드가 없어 종료되어 호출스택은 비워지고 프로그램은 종료하게 된다. 
 

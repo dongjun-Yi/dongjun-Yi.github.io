@@ -10,7 +10,7 @@ render_with_liquid: false
 
 팩토리 메소드 패턴은 생성 패턴 중 하나로 이 패턴이 언제 적용 되는지 알기 위해 사과를 디저트로 제공하는 식당 클래스로 예를 들어보자
 
-![Untitled.png](/assets/images/Factory Method Pattern/Untitled.png)
+![Untitled.png](/assets/images/Factory_Method_Pattern/Untitled.png)
 
 Apple
 
@@ -253,7 +253,7 @@ public class Main {
 }
 ```
 
-![Untitled1.png](/assets/images/Factory Method Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Factory_Method_Pattern/1.png)
 
 - **Product(Apple) : 팩토리 메소드로 생성될 객체의 공통 인터페이스**
 - **ConcreteProduct(Busa, Hongok) : 구체적으로 객체가 생성되는 클래스**

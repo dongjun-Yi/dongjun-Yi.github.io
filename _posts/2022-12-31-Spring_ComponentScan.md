@@ -79,7 +79,7 @@ public class AutoAppConfigTest {
 
 1. `**@AutoWired` 의존관계 자동 주입**
 
-![Untitled1.png](/assets/images/Spring_ComponentScan/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_ComponentScan/1.png)
 
 - 생성자에 `@Autowired` 를 지정하면, 스프링 컨테이너가 자동으로 해당 스프링 빈을 찾아서 주입한다.
 - `getBean(MemberRepository.class)`를 이용해서 한다고 생각하면 된다.

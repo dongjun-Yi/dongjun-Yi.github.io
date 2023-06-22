@@ -10,7 +10,7 @@ render_with_liquid: false
 
 Adder라는 인터페이스를 이용해 UserAdd가 덧셈을 구현하는 방식을 클래스 다이어그램으로 나타내면 다음과 같다.
 
-![Untitled.png](/assets/images/Adapter Pattern/Untitled.png)
+![Untitled.png](/assets/images/Adapter_Pattern/Untitled.png)
 
 UserAdder는 Adder를 상속한 Adder객체와 더할 두 정수를 생성자의 매개변수로 받게 되어 계산을 하게 된다.
 
@@ -64,7 +64,7 @@ public class Main {
 
 제공하는 인터페이스를 YourAdder라고 하면 YourAdder에서는 add라는 메소드를 제공하지만 UseAdder는 plus라는 연산을 사용하므로  이 둘을 연결해주는 YourAdapter 클래스를 만들어 사용하면 된다.
 
-![Untitled1.png](/assets/images/Adapter Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Adapter_Pattern/1.png)
 
 YourAdder
 
@@ -107,7 +107,7 @@ public class Main {
 
 이렇게 되면 제공하는 인터페이스가 달라도 기존의 코드 수정없이 adpter만 추가하여 덧셈 연산을 구현할 수 있게 된다.
 
-![Untitled2.png](/assets/images/Adapter Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Adapter_Pattern/2.png)
 
 - **Client(UseAdder) : Target 인터페이스를 만족하는 객체와 동작할 대상**
 - **Target(Adder) : 사용자가 사용할 응용 분야에 종속적인 인터페이스를 정의하는 클래스**

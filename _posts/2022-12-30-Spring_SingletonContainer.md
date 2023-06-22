@@ -122,7 +122,7 @@ void springContainer() {
 
 **스프링 컨테이너 적용 후** 
 
-![Untitled1.png](/assets/images/Spring_SingletonContainer/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_SingletonContainer/1.png)
 
 - 스프링 컨테이너 덕분에 고객의 요청이 올 때 마다 객체를 생성하는 것이 아니라, 이미 만들어진 객체를 공유해서 효율적으로 재사용할 수 있다.
 
@@ -208,7 +208,7 @@ void configurationDeep() {
 
 bean객체를 println으로 출력하게 되면 xxxCGLIB가 붙으면서 상당히 복잡하게 출력되는것을 볼 수 있다. 이것은 내가 만든 클래스가 아니라 **스프링이 CGLIB라는 바이트코드 조작 라이브러리를 사용해서** AppConfig 클래스를 상속받은 임의의 다른 클래스를 만들고, **그 다른 클래스를 스프링 빈으로 등록한 것이다!**
 
-![Untitled2.png](/assets/images/Spring_SingletonContainer/Untitled 2.png)
+![Untitled2.png](/assets/images/Spring_SingletonContainer/2.png)
 
 - 이렇게 바이트 코드를 조작하여 스프링 컨테이너는 싱글톤을 보장해준다.
 

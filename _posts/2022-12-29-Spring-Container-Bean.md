@@ -25,17 +25,17 @@ new AnnotationConfigApplicationContext(AppConfig.class)을 이용해 컨테이�
 
 ### 스프링 빈 등록
 
-![Untitled1.png](/assets/images/Spring_Container_Bean/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_Container_Bean/1.png)
 
 설정 클래스 정보를 사용해서 스프링 빈을 등록한다.
 
 ### 스프링 빈 의존관계 설정 - 준비
 
-![Untitled2.png](/assets/images/Spring_Container_Bean/Untitled 2.png)
+![Untitled2.png](/assets/images/Spring_Container_Bean/2.png)
 
 ### 스프링 빈 의존관계 설정 - 완료
 
-![Untitled3.png](/assets/images/Spring_Container_Bean/Untitled 3.png)
+![Untitled3.png](/assets/images/Spring_Container_Bean/3.png)
 
 스프링 컨테이너는 빈을 등록한 후 빈끼리 의존관계를 주입해준다.
 
@@ -190,7 +190,7 @@ public class ApplicationContextSameBeanFindTest {
 
 ---
 
-![Untitled4.png](/assets/images/Spring_Container_Bean/Untitled 4.png)
+![Untitled4.png](/assets/images/Spring_Container_Bean/4.png)
 
 - 부모 타입으로 빈을 조회하면 자식 타입도 모두 조회된다.
 - 자바 객체의 부모인 Object타입으로 조회하면 모든 스프링 빈이 조회된다.
@@ -258,7 +258,7 @@ public class ApplicationContextExtendsFindTest {
 
 ---
 
-![Untitled5.png](/assets/images/Spring_Container_Bean/Untitled 5.png)
+![Untitled5.png](/assets/images/Spring_Container_Bean/5.png)
 
 - **BeanFactory**
     - 스프링 컨테이너의 최상위 인터페이스
@@ -271,7 +271,7 @@ public class ApplicationContextExtendsFindTest {
 
 ### ApplicationContext
 
-![Untitled6.png](/assets/images/Spring_Container_Bean/Untitled 6.png)
+![Untitled6.png](/assets/images/Spring_Container_Bean/6.png)
 
 - MessageSource
     - **메세지 소스를 활용한 국제화 기능**
@@ -286,7 +286,7 @@ public class ApplicationContextExtendsFindTest {
 
 ---
 
-![Untitled7.png](/assets/images/Spring_Container_Bean/Untitled 7.png)
+![Untitled7.png](/assets/images/Spring_Container_Bean/7.png)
 
 스프링 컨테이너는 자바코드, XML 등 다양한 형식의 설정 정보를 받아드릴 수 있게 유연하게 설계되어 있다.
 
@@ -296,13 +296,13 @@ public class ApplicationContextExtendsFindTest {
 
 스프링은 BeanDefinition이라는 추상화가 있어 다양한 설정형식을 지원한다.
 
-![Untitled8.png](/assets/images/Spring_Container_Bean/Untitled 8.png)
+![Untitled8.png](/assets/images/Spring_Container_Bean/8.png)
 
 BeanDefinition을 빈 설정 메타 정보라 하며, 스프링 컨테이너는 이 메타 정보를 기반으로 스프링 빈을 생성한다.
 
 **코드레벨 BeanDefinition**
 
-![Untitled9.png](/assets/images/Spring_Container_Bean/Untitled 9.png)
+![Untitled9.png](/assets/images/Spring_Container_Bean/9.png)
 
 AnnotationConfigApplicationContext 는 AnnotatedBeanDefinitionReader 를 사용해서
 AppConfig.class 를 읽고 BeanDefinition 을 생성한다.

@@ -82,7 +82,7 @@ public class RoadDisplayWithTraffic extends RoadDisplay {
 
 클래스 다이어그램의 형태는 다음과 같다.
 
-![Untitled.png](/assets/images/Decorator Pattern/Untitled.png)
+![Untitled.png](/assets/images/Decorator_Pattern/Untitled.png)
 
 - 여기서 Display 인터페이스와 이를 상속받은 DisplayDecorator 간의 연관관계를 맺은 이유는 기본 기능을 제공하는 draw()를 사용하기 위해 상속관계가 아닌 기본기능과 추가기능 간의 연관관계로 관계를 맺은 것이다.
 
@@ -166,7 +166,7 @@ public class Main {
 
 Decorator Pattern
 
-![Untitled.png](/assets/images/Decorator Pattern/Untitled 1.png)
+![Untitled.png](/assets/images/Decorator_Pattern/1.png)
 
 - **Component : 기본 기능을 뜻하는 ConcreteComponent와 추가 기능을 뜻하는 Decorator의 공통 기능을 정의**
 - **ConcreteComponent : 기본 기능을 구현하는 클래스**

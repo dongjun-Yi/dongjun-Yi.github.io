@@ -10,7 +10,7 @@ render_with_liquid: false
 
 택배 박스안에 있는 물품들의 비용을 계산하는 예로 보자. 박스안에는 양말과 바지가 있다고 했을 때 클래스 구조는 다음과 같다.
 
-![Untitled.png](/assets/images/Composite Pattern/Untitled.png)
+![Untitled.png](/assets/images/Composite_Pattern/Untitled.png)
 
 Box
 
@@ -88,7 +88,7 @@ public class Main {
 
 여기에서 박스에 만약 gold라는 아이템을 추가한다면 클래스 다이어그램은 다음과 같이 된다.
 
-![Untitled1.png](/assets/images/Composite Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Composite_Pattern/1.png)
 
 Gold
 
@@ -137,7 +137,7 @@ public class Box {
 
 또한 박스안에 박스를 넣을 수 있기 때문에 박스 클래스는 자신과 집약관계를 맺을 수 있게 되고 클래스 다이어그램으로 나타내면 다음과 같다.
 
-![Untitled2.png](/assets/images/Composite Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Composite_Pattern/2.png)
 
 자신과 집약관계를 맺는 Box
 
@@ -205,7 +205,7 @@ public class Main {
 
 **ParcelItem을 상속하여 구성된 구조**
 
-![Untitled3.png](/assets/images/Composite Pattern/Untitled 3.png)
+![Untitled3.png](/assets/images/Composite_Pattern/3.png)
 
 ParcelItem
 
@@ -311,7 +311,7 @@ public class Main {
 
 Composite 패턴은 전체-부분을 가지는 객체들 간의 관계를 정의할때 유용하다. 클라이언트는 전체와 부분을 구분하지 않고 동일한 인터페이스를 사용할 수 있다.
 
-![Untitled4.png](/assets/images/Composite Pattern/Untitled 4.png)
+![Untitled4.png](/assets/images/Composite_Pattern/4.png)
 
 - **Component : 구체적인 부분, 즉 Leaf 클래스와 전체에 해당하는 Composite 클래스에 공통 인터페이스를 정의함.**
 - **Leaf : 구체적인 부분클래스로 Composite 객체의 부품으로 설정**

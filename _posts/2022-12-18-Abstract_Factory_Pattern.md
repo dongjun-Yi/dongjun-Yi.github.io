@@ -272,9 +272,9 @@ public class ElevatorCreator {
 
 **클래스 다이어그램**
 
-![Untitled.png](/assets/images/Abstract Factory Pattern/Untitled.png)
+![Untitled.png](/assets/images/Abstract_Factory_Pattern/Untitled.png)
 
-![Untitled1.png](/assets/images/Abstract Factory Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Abstract_Factory_Pattern/1.png)
 
 ElevatorFactory
 
@@ -372,7 +372,7 @@ public class ElevatorCreator {
 
 팩토리 메소드 패턴은 한 종류의 객체를 생성하기 위해 사용되지만, 추상 팩토리 메소드는 연관되거나 의존적인 객체로 이루어진 여러 종류의 객체를 생성하기 위해 생성된다.
 
-![Untitled2.png](/assets/images/Abstract Factory Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Abstract_Factory_Pattern/2.png)
 
 추상 팩토리 패턴은 이와 같이 관련성 있는 여러 종류의 객체를 일관된 방식으로 생성하는 경우에 유용하다.
 

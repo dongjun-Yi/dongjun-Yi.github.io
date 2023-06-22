@@ -24,7 +24,7 @@ Spring 웹 어플리케이션에서 브라우저에게 응답하는 방식은 �
 
 ---
 
-![Untitled1.png](/assets/images/Spring_Web_Basic/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_Web_Basic/1.png)
 
 1. 웹 브라우저는 /hello-mvc를 요청하고 내장 톰켓 서버는 스프링 컨터이너에 helloController에게 넘겨서 /hello-mvc에 매핑되어있는 메소드를 호출하고 “hello-template”을 return한다.
 2. viewResolver는 return한 “hello-template”을 templates밑에 찾고 템플릿 엔진에게 넘긴다.
@@ -34,7 +34,7 @@ Spring 웹 어플리케이션에서 브라우저에게 응답하는 방식은 �
 
 ---
 
-![Untitled2.png](/assets/images/Spring_Web_Basic/Untitled 2.png)
+![Untitled2.png](/assets/images/Spring_Web_Basic/2.png)
 
 1. 웹 브라우저가 /hello-api를 요청하면 내장 톰켓 서버는 스프링에 helloController에게 넘겨서 helloController는 /hello-api와 매핑되어있는 메소드가 있다면 해당 메소드를 호출한다.
 2. 만약 해당 메소드에 `@ReponseBody` 라고 어노테이션이 있다면 viewResolver 대신 HttpMessageConverter에게 return 값을 반환한다.

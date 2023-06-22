@@ -87,7 +87,7 @@ public class TimeTraceAop {
 시간을 측정하는 로직을 별도의 공통 로직으로 만들었다.
 
 횡단 관심사와 핵심로직
-![Untitled1.png](/assets/images/Spring_AOP/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_AOP/1.png)
 
 
 결국 위의 예제에서 공통 관심사인 시간을 측정하는 로직이 횡단 관심사가 되며 , 여러 모듈들이 시간 측정하는 로직을 사용할 수 있게 되는 것이다.
@@ -96,11 +96,11 @@ public class TimeTraceAop {
 
 ---
 **AOP 적용 전 의존관계**
-![Untitled2.png](/assets/images/Spring_AOP/Untitled 2.png)
+![Untitled2.png](/assets/images/Spring_AOP/2.png)
 
 
 **AOP 적용 후 의존관계**
-![Untitled3.png](/assets/images/Spring_AOP/Untitled 3.png)
+![Untitled3.png](/assets/images/Spring_AOP/3.png)
 
 
 AOP를 등록하면 스프링 컨테이너에 프록시 memberService빈이 등록되고 memberController는 프록시 memberService와 연관관계를 맺게 된다. 이후 j`oinPoint.proceed()`를 실행하면 실제 memberService가 실행되게 된다. 이렇게 하여 공통 관심 사항을 메소드마다 적용할 수 있게 되어 핵심 관심 사항을 분리할 수 있게 된다.

@@ -69,7 +69,7 @@ public class MemberService {
 
 생성자에 `@Autowired`를 사용하면 객체 생성 시점에 스프링 컨테이너에서 해당 스프링 빈을 찾아서 주입한다.
 
-![Untitled1.png](/assets/images/Spring_Bean/Untitled 1.png)
+![Untitled1.png](/assets/images/Spring_Bean/1.png)
 
 어노테이션을 사용한 결과 memberService와 memberRepository가 스프링 컨테이너에 스프링 빈으로 등록된 것을 볼 수 있다.
 

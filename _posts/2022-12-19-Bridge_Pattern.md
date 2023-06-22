@@ -84,7 +84,7 @@ public class Remote {
 
 **클래스 다이어그램**
 
-![Untitled.png](/assets/images/Bridge Pattern/Untitled.png)
+![Untitled.png](/assets/images/Bridge_Pattern/Untitled.png)
 
 But, 만약 Device쪽에 변화가 일어나는것이 아닌 Remote쪽에 변화가 일어나면?
 
@@ -92,7 +92,7 @@ But, 만약 Device쪽에 변화가 일어나는것이 아닌 Remote쪽에 변화
 
 **클래스 다이어그램**
 
-![Untitled1.png](/assets/images/Bridge Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Bridge_Pattern/1.png)
 
 Device
 
@@ -267,12 +267,12 @@ public class Main {
 
 **여기서 Remote의 기능은 TV에 의존된 기능을 제공을 하므로 상위 레벨 개념이고, TV는 하위 레벨 개념이 된다.** Remote 객체는 기능을 실행하기 위해서는 구현부인 TV에서 그 기능을 실행하기 떄문에 추상부(Remote)에서 구현부로 기능을 실현하기 위해 위임한다고 볼 수 있다.
 
-![Untitled2.png](/assets/images/Bridge Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Bridge_Pattern/2.png)
 
 - 추상부  : AdvancedRemoteWithMute.java
 - 구현부 : TV, Radio
 
-![Untitled3.png](/assets/images/Bridge Pattern/Untitled 3.png)
+![Untitled3.png](/assets/images/Bridge_Pattern/3.png)
 
 - **abstraction(BasicRemote) : 추상적 개념에 대한 인터페이스를 제공하고 객체 구현자(Implementor)에 대한 참조자를 관리한다.**
 - **RefinedAbstraction(AdvanceRemoteWithMute) : 추상적 개념에 정의된 인터페이스를 확장한다.**

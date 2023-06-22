@@ -134,7 +134,7 @@ class TvTest3 {
 
 이 예제에 실행과정을 그림으로 보면 다음과 같다.
 
-![Untitled1.png](/assets/images/Java_Class_Object/Untitled 1.png)
+![Untitled1.png](/assets/images/Java_Class_Object/1.png)
  
 t1과 t2는 처음에 각각 다른 인스턴스의 주소를 가지고 있다가, t2=t2;을 실행하면 t2가 가지고있던 참조값은 잃어버리게 되고 t1에 저장되어 있던 값이 t2에 저장되게 된다. 그러면 t2와 t1은 동일한 인스턴스를 가르키게 된다.
 위처럼 자바에서는 참조변수를 통해서 객체를 다른 변수와 공유할 수 있다.
