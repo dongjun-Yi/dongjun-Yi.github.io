@@ -96,7 +96,7 @@ dong1과 dong2의 계좌를 생성하여 입금과 출금을 기록하는 일을
 
 ### 실행결과
 
-![Untitled1.png](/assets/images/Singleton Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Singleton Pattern/1.png)
 
           → dong1의 입금 내역이 누락되어 dong2의 출금내역만 log.txt에 출력된것을 볼 수 있다.
 
@@ -154,7 +154,7 @@ public class Main {
 
 ### 실행결과
 
-![Untitled2.png](/assets/images/Singleton Pattern/Untitled 2.png)
+![Untitled2.png](/assets/images/Singleton Pattern/2.png)
 
 **but,** 위와 같은 코드로 작성하게 되면 Logger 인스턴스를 **외부에서 여러개 생성할 수 있게 된다**. 따라서 외부에서 여러개 생성못하도록 막아야한다.
 
@@ -250,7 +250,7 @@ public class Main {
 
 ### 실행결과
 
-![Untitled3.png](/assets/images/Singleton Pattern/Untitled 3.png)
+![Untitled3.png](/assets/images/Singleton Pattern/3.png)
 
 → 하나의 Logger 인스턴스를 공유해 문제없이 잘 수행된다. 
 
@@ -288,7 +288,7 @@ public class Main {
 
 **실행결과**
 
-![Untitled.png](/assets/images/Singleton Pattern/Untitled.png)
+![Untitled.png](/assets/images/Singleton Pattern/print.png)
 
 → 위의 실행결과와 같이 다중스레드 환경에서는 하나의 내역만 출력되고 인스턴스는 여러개가 생성된것을 알 수 있다.
 
