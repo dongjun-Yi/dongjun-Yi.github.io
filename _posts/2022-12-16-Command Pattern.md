@@ -57,7 +57,7 @@ public class Main {
 - 버튼은 수행될 기능을 캡슐화된 객체로서 전달 받음
 - 버튼이 눌리면 전달 받은 객체를 호출함으로써 구체적 기능을 수행
 
-![Untitled1.png](/assets/images/Command Pattern/Untitled.png)
+![Untitled1.png](/assets/images/Command_Pattern/Untitled.png)
 
 **Command interface**
 
@@ -138,7 +138,7 @@ public class Main{
 
 버튼이 눌렀을 때 필요한 임의의 기능은 Command 인터페이스를 구현한 클래스의 객체를 Button 객체에 설정해서 실핼할 수 있다. 따라서 Button 클래스는 소스코드를 변경하지 않으면서도 다양한 동작을 구현할 수 있다.
 
-![Untitled1.png](/assets/images/Command Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Command_Pattern/1.png)
 
 - **커맨드 패턴은 실행될 기능을 캡슐화함으로써 기능의 실행을 요구하는 호출자(Invoker) 클래스와 실제 기능을 실행하는 수신자(Recevier) 클래스 사이의 의존성을 제거한다. 따라서 실행될 기능의 변경에도 호출자 클래스를 수정 없이 그대로 사용할 수 있도록 해준다.**
 

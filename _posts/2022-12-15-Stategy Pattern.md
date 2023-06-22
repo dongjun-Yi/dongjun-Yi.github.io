@@ -13,7 +13,7 @@ Robot 클래스로 예를 들어 보자. 로봇은 아톰과 태권V가 있고, 
 
 **클래스 다이어그램**
 
-![Untitled1.png](/assets/images/Strategy Pattern/Untitled.png)
+![Untitled1.png](/assets/images/Strategy_Pattern/Untitled.png)
 
 **Robot**
 
@@ -112,11 +112,11 @@ TaekwonV와 Atom 클래스는 추상클래스를 상속하여 구현하여 공�
 
 캡슐화 하기 위해서는 외부에서 구체적인 이동 방식과 공격 방식을 담은 구체적인 클래스들을 은닉해야 한다. 이를 위해 공격과 이동을 위한 **인터페이스를 각각 만들고 이들을 실제 실현한 클래스를 만들어야 한다.**
 
-![Untitled1.png](/assets/images/Strategy Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Strategy_Pattern/1.png)
 
 **개선된 클래스 다이어그램**
 
-![Untitled1.png](/assets/images/Strategy Pattern/Untitled 2.png)
+![Untitled1.png](/assets/images/Strategy_Pattern/2.png)
 
 Robot
 
@@ -227,9 +227,9 @@ public class Main {
 
 또한 위와 같은 코드는 외부에서 로봇 객체의 이동 방식과 공경 방식을 임의대로 바꾸도록 해주는 메소드가 추가로 필요하게 된다. 이를 위해 Robot 클래스에 setMovingStrategy와 setAttackStrategy 메소드를 정의해 로봇의 이동 방식과 공격 방식이 필요할 때 바꿀 수 있도록 한다.
 
-![Untitled1.png](/assets/images/Strategy Pattern/Untitled 3.png)
+![Untitled1.png](/assets/images/Strategy_Pattern/3.png)
 
-![Untitled1.png](/assets/images/Strategy Pattern/Untitled 4.png)
+![Untitled1.png](/assets/images/Strategy_Pattern/4.png)
 
 Strategy - Quicksort or Mergesort [algo change]
 

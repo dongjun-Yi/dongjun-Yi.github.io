@@ -13,7 +13,7 @@ render_with_liquid: false
 - ScoreRecord class : 점수를 저장/관리하는 클래스
 - DataSheetView class : 점수를 목록형태로 출력하는 클래스
 
-![Untitled.png](/assets/images/Observer Pattern/Untitled.png)
+![Untitled.png](/assets/images/Observer_Pattern/Untitled.png)
 
 ScoreRecord
 
@@ -179,7 +179,7 @@ public class Main {
 
 **Observer 클래스 다이어그램**
 
-![Untitled1.png](/assets/images/Observer Pattern/Untitled 1.png)
+![Untitled1.png](/assets/images/Observer_Pattern/1.png)
 
 Observer interface
 
@@ -343,7 +343,7 @@ public class ScoreRecord extends Subject{
 
 즉, Subject 클래스는 **옵서버 객체를 관리하는** 클래스, ScoreRecord 클래스는 **변경 관리 대상이 되는 데이터가 있는** 클래스가 된다. 
 
-![Untitled1.png](/assets/images/Observer Pattern/Untitled 2.png)
+![Untitled1.png](/assets/images/Observer_Pattern/2.png)
 
 - **Subject : 감시자들을 알고 있는 주체. 임의 개수의 감시자 객체는 주체를 감시할 수 있다. 주체는 감시자 객체를 붙이거나 떼는 데 필요한 인터페이스를 제공한다.**
 - **Observer : 주체에 생긴 변화에 관심 있는 객체를 갱신하는 데 필요한 인터페이스를 정의. 이로써 주체의 변경에 따라 변화되어야 하는 객체들의 일관성을 유지.**
