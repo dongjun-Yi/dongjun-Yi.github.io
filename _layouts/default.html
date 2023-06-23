@@ -3,7 +3,9 @@ layout: compress
 # Default layout
 ---
 
-<!DOCTYPE html>
+<!doctype html>
+
+{% include origin-type.html %}
 
 {% include lang.html %}
 
@@ -13,36 +15,22 @@ layout: compress
   {% endif %}
 {% endcapture %}
 
-<html lang="{{ site.lang }}"{{ prefer_mode }}>
-
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
+  <body>
+    {% include sidebar.html lang=lang %}
 
-  <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
-
-    {% include sidebar.html %}
-
-    {% include topbar.html %}
-
-    <div id="main-wrapper">
-      <div id="main">
-
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div id="main" class="container px-xxl-5">
+        {% include topbar.html lang=lang %}
         {{ content }}
-
-        {% include footer.html %}
-
+        {% include search-results.html lang=lang %}
       </div>
+    </div>
 
-      {% include search-results.html %}
-
-    </div> <!-- #main-wrapper -->
-
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
+    {% include footer.html lang=lang %}
 
     <div id="mask"></div>
 
@@ -50,10 +38,39 @@ layout: compress
       <i class="fas fa-angle-up"></i>
     </a>
 
-    {% include search-loader.html %}
+    {% if site.pwa.enabled %}
+      <div
+        id="notification"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-animation="true"
+        data-bs-autohide="false"
+      >
+        <div class="toast-header">
+          <button
+            type="button"
+            class="btn-close ms-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body text-center pt-0">
+          <p class="px-2 mb-3">{{ site.data.locales[lang].notification.update_found }}</p>
+          <button type="button" class="btn btn-primary" aria-label="Update">
+            {{ site.data.locales[lang].notification.update }}
+          </button>
+        </div>
+      </div>
+    {% endif %}
 
     {% include js-selector.html %}
 
-  </body>
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
 
+    {% include search-loader.html %}
+  </body>
 </html>

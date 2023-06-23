@@ -27,14 +27,6 @@ panel:
   trending_tags: ခေတ်စားနေသည့်တက်ဂ်များ
   toc: အကြောင်းအရာများ
 
-#  The liquid date format › http://strftime.net/
-date_format:
-  tooltip: '%a, %b %e, %Y, %l:%M %p %z'
-  post:
-    long: '%b %e, %Y'
-    short: '%b %e'
-    archive_month: '%b'
-
 copyright:
   # Shown at the bottom of the post
   license:
@@ -48,13 +40,14 @@ copyright:
     အခြားမှတ်သားထားချက်များမှလွဲ၍ ဤဆိုက်ရှိ ဘလော့ဂ်ပို့စ်များသည် စာရေးသူ၏
     Creative Commons Attribution 4.0 International (CC BY 4.0) အောက်တွင် လိုင်စင်ရထားပါသည်။
 
-meta: Powered by :PLATFORM with :THEME theme.
+meta: Powered by :PLATFORM with :THEME theme
 
 not_found:
   statment: ဝမ်းနည်းပါသည်၊ ကျွန်ုပ်တို့သည် အဆိုပါ URL ကို မှားယွင်းစွာ နေရာချထားခြင်း သို့မဟုတ် ၎င်းသည် မရှိသောအရာကို ညွှန်ပြနေပါသည်။
-  hint_template: ၎င်းကို ထပ်မံရှာဖွေရန် :HEAD_BAK , သို့မဟုတ် :ARCHIVES_PAGE တွင်ရှာပါ။
-  head_back: အဓိကစာမျက်နှာသို့ပြန်သွားပါ။
-  archives_page: မှတ်တမ်း​တိုက် စာမျက်နှာ။
+
+notification:
+  update_found: အကြောင်းအရာဗားရှင်းအသစ်ကို ရနိုင်ပါပြီ။
+  update: အပ်ဒိတ်
 
 # ----- Posts related labels -----
 
@@ -62,11 +55,6 @@ post:
   written_by: ကရေးသားခဲ့သည်။
   posted: တင်ထားခဲ့သည်။
   updated: မွမ်းမံထားခဲ့သည်။
-  timeago:
-    day: လွန်ခဲ့သော ရက်များတွင်း
-    hour: လွန်ခဲ့သော နာရီပိုင်းတွင်း
-    minute: လွန်ခဲ့သော မိနစ်အနည်းငယ်က
-    just_now: အခုလေးတင်
   words: စကားလုံးများ
   pageview_measure: အမြင်များ
   read_time:
@@ -82,8 +70,6 @@ post:
     share_link:
       title: လင့်ခ်ကို ကူးယူရန်
       succeed: လင့်ခ်ကို ကူးယူလိုက်ပြီ။
-  # pinned prompt of posts list on homepage
-  pin_prompt: ချိတ်ထားသည်။
 
 # categories page
 categories:
