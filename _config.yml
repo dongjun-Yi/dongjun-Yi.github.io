@@ -20,7 +20,7 @@ timezone: Asia/Shanghai
 
 title: 동준이 블로그 # the main title
 
-tagline: 성장하기 위해 글 쓰는 곳 # it will display as the sub-title
+tagline: 성장하자 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -29,7 +29,7 @@ description: >- # used by seo meta and the atom feed
 url: 'https://dongjun-Yi.github.io'
 
 github:
-  username: github_username # change to your github username
+  username: dongjun-yi # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
