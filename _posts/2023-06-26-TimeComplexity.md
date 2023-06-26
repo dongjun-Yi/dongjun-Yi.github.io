@@ -46,7 +46,7 @@ array = [3, 5, 1, 2, 4]
 sum = 0
 
 for x in array:
-		sum +=x
+    sum +=x
 
 print(sum)
 
@@ -59,9 +59,9 @@ print(sum)
 array = [3, 5, 1, 2, 4]
 
 for i in array:
-		for j in array:
-				temp = i*j
-				print(temp)
+    for j in array:
+        temp = i*j
+        print(temp)
 ```
 
 이 소스코드는 데이터의 개수가 N개일 때 O(N제곱)의 시간 복잡도를 가진다. 이는 반복문이 2중 반복문이라서 반복횟수가 N * N 만큼 연산이 필요한 것이다.
