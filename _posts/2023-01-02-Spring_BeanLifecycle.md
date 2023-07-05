@@ -199,7 +199,7 @@ static class LifeCycleConfig {
 `@Bean`의 기능을 사용하자.
 
 <aside>
-👉 **`@PostConstruct, @PreDestroy` 애노테이션을 사용하자**
+👉 `@PostConstruct, @PreDestroy` 애노테이션을 사용하자**
 
 코드를 고칠 수 없는 외부 라이브러리를 초기화, 종료해야 하면 `@Bean` 의 initMethod , destroyMethod를 사용하자.
 
