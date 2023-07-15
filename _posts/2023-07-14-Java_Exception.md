@@ -30,7 +30,7 @@ render_with_liquid: false
 
 모든 예외의 최고 조상은 Exception클래스이며, 상슥계층도를 Exception클래스로부터 도식화하면 다음과 같다.
 
-![Untitled.png](/assets/images/Java_Exception/1)
+![Untitled.png](/assets/images/Java_Exception/1.png)
 
 위의 사진에서 볼 수 잇듯이 예외 클래스는 Exception클래스와 그 자손들 그룹과 RuntimeException클래스와 그 자손들로 나눠진다.
 
