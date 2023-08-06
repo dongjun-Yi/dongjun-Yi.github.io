@@ -6,8 +6,7 @@ categories: [JPA]
 tags: [java, ORM, JPA]
 render_with_liquid: false
 ---
-## 엔티티 매니저 팩토리와 엔티티 매니저영속성 컨텍스트란?
-
+## 엔티티 매니저 팩토리와 엔티티 매니저
 ---
 
 ![Untitled.png](/assets/images/PersistenceContext/Untitled.png)
