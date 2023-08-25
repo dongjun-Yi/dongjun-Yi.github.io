@@ -10,9 +10,7 @@ render_with_liquid: false
 
 높이를 입력받아 비 온 후 얼마나 많은 물이 쌓일 수 있는지 계산하라.
 
-![Untitled.png](/assets/images/RainWaterTrapping/Untitled.jpg)
-
-[https://leetcode.com/problems/trapping-rain-water/](https://leetcode.com/problems/trapping-rain-water/)
+![Untitled.png](/assets/images/RainWaterTrapping/Untitled.png)
 
 ## 입력
 
