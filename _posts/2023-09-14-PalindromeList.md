@@ -109,7 +109,7 @@ def isPalindrome(self, head: ListNode) -> bool:
 
 런너(Runner)는 연결 리스트를 순회할 때 2개의 포인터를 동시에 사용하는 기법이다. **한 포인터가 다른 포인터보다 앞서게 하여** 병합 지점이나 중간 위치, 길이 등을 판별할 때 유용하게 사용할 수 있다.
 
-![Untitled.png](/assets/images/ArrayExceptSelf/python-54.jpg)
+![Untitled.png](/assets/images/PalindromeList/python-54.jpg)
 
 위의 그림처럼 각각 빠른 런너, 느린 런너라고 부르는 포인터 2개가 있고, 빠른 런너는 두칸씩 이동하고, 느린 런너는 한칸 씩 이동한다. 이때 빠른 런너가 연결 리스트의 끝에 도달하면, 느린 런너는 정확히 연결 리스트의 중간 지점을 가르킨다. 이를 이용해 **중앙값을 기준으로 앞뒤 문자가 같은지 확인하여 풀이**할 수 있다.
 그래서 빠른런너와 느린런너의 이동을 코드로 나타내면 다음과 같다.
@@ -121,7 +121,7 @@ slow = slow.next
 
 위와 같이 빠른런너와 느린런너가 이동하면서 빠른런너가 리스트의 끝에 도달할 때까지 진행하면서 rev라는 리스트에다가 역순으로 값을 삽입한다.
 
-![Untitled.png](/assets/images/ArrayExceptSelf/python-55.jpg)
+![Untitled.png](/assets/images/PalindromeList/python-55.jpg)
 
 ```python
 while fast and fast.next:
