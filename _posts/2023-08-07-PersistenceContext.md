@@ -11,13 +11,13 @@ render_with_liquid: false
 
 ![Untitled.png](/assets/images/PersistenceContext/Untitled.png)
 
-**엔티 매니저 팩토리**는 이름 그대로 **엔티티 매니저를 만드는 공장**이고, **엔티티 매니저**는 엔티티를 저장하고, 수정하고, 삭제하고, 조회하는 등 엔티티와 관련된 모든일을 처리하는 **엔티티를 관리하는 관리자**이다.
+**엔티티 매니저 팩토리**는 이름 그대로 **엔티티 매니저를 만드는 공장**이고, **엔티티 매니저**는 엔티티를 저장하고, 수정하고, 삭제하고, 조회하는 등 엔티티와 관련된 모든일을 처리하는 **엔티티를 관리하는 관리자**이다.
 
 ## 영속성 컨텍스트란?
 
 ---
 
-영속성 컨텍스트(Persistence Context)는 논리적인 개념으로 **엔티티를 영구 저장하는 환경이다.**
+**영속성 컨텍스트(Persistence Context)**는 논리적인 개념으로 **엔티티를 영구 저장하는 환경이다.**
 
 ```java
 EntityManger.persist(entity);
@@ -149,15 +149,15 @@ System.out.println(a == b); //동일성 비교 true
 
 ![Untitled.png](/assets/images/PersistenceContext/7.png)
 
-영속성 컨텍스트안에는 1차캐시외에 **쓰기지연 SQL 저장소**라는곳이 있다. 위의 그림처럼 em.persist(memberA)로 영속성 컨텍스트에 넣으면 memberA가 1차캐시에 보관된다. 그러면서 동시에 JPA는 memberA엔티티를 분석해서 INSERT쿼리를 생성한다. 그 후 쓰기지연 SQL저장소에 쌓아둔다.
+영속성 컨텍스트안에는 1차캐시외에 **쓰기지연 SQL 저장소**라는곳이 있다. 위의 그림처럼 `em.persist(memberA)`로 영속성 컨텍스트에 넣으면 memberA가 1차캐시에 보관된다. 그러면서 동시에 JPA는 memberA엔티티를 분석해서 INSERT쿼리를 생성한다. 그 후 쓰기지연 SQL저장소에 쌓아둔다.
 
 ![Untitled.png](/assets/images/PersistenceContext/8.png)
 
-또한 memberB를 persist()하게 되면 1차캐시에 저장되고, JPA는 INSERT쿼리를 쓰기지연 SQL저장소에 보관하게 된다.
+또한 memberB를 `persist()`하게 되면 1차캐시에 저장되고, JPA는 INSERT쿼리를 쓰기지연 SQL저장소에 보관하게 된다.
 
 ![Untitled.png](/assets/images/PersistenceContext/9.png)
 
-보내그 후 transaction을 commit()하게 되면 쓰지 지연 SQL저장소에 있던 SQL문들이 DB에 보내지게 된다. 그래서 실제 데이터베이스 트랜잭션이 commit되게 된다.
+보내그 후 transaction을 `commit()`하게 되면 쓰지 지연 SQL저장소에 있던 SQL문들이 DB에 보내지게 된다. 그래서 실제 데이터베이스 트랜잭션이 commit되게 된다.
 
 이와 같은 과정을 코드로 보면 아래와 같다.
 
@@ -240,8 +240,8 @@ JPA는 내부적으로 **Dirty checking**이라는 것을 한다. JPA는 데이�
 
 영속성 컨텍스트를 플러시하는 방법은 3가지가 있다.
 
-1. em.flush() - 플러시 수동 호출
-2. transaction.commit() - 플러시 자동 호출
+1. `em.flush()` - 플러시 수동 호출
+2. `transaction.commit()` - 플러시 자동 호출
 3. JPQL 쿼리 실행 - 플러시 자동 호출
 
 다음 코드는 플러시를 수동으로 호출한 코드이다.
@@ -286,7 +286,7 @@ Hibernate:
 ===========
 ```
 
-위의 결과처럼 commit()전에 flush()로 INSERT쿼리가 DB에 나가는것을 확인할 수 있다.
+위의 결과처럼 `commit()`전에 `flush()`로 INSERT쿼리가 DB에 나가는것을 확인할 수 있다.
 
 > 플러시를 하면 1차캐시를 비우는게 아니라 영속성 컨텍스트안에 쓰기지연 SQL저장소에서 데이터들이 바뀐 것이 DB에 반영하는 작업이다!
 즉, 플러시는 **영속성 컨텍스트의 변경내용을 데이터베이스에 동기화하는 작업이다!!**

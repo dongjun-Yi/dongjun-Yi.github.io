@@ -81,7 +81,7 @@ def isPalindrome(self, head: ListNode) -> bool:
 
 ---
 
-앞서 풀이의 `pop(0)`는 첫 번째 값을 꺼내오면 모든 값이 한 칸씩 시프팅 되어 시간복잡도가 O(n)이 발생된다. 이는 deque에서 `popleft()`를 이용하여 맨 앞의 값을 꺼내오는 연산을 O(1)로 풀이 될 수 있다.
+앞서 풀이의 `pop(0)`는 첫 번째 값을 꺼내오면 모든 값이 한 칸씩 시프팅 되어 시간복잡도가 O(n)이 된다. 이는 deque에서 `popleft()`를 이용하여 맨 앞의 값을 꺼내오는 연산을 O(1)로 풀이 될 수 있다.
 
 ```python
 def isPalindrome(self, head: ListNode) -> bool:
@@ -129,7 +129,7 @@ while fast and fast.next:
   rev, rev.next, slow = slow, rev, slow.next
 ```
 
-위와 같이 rev의 초기값은 None에서 시작하고, 느린 런너가 이동하면서  1→ None, 2→ 1 → None과 같이 역순으로 연결된다.
+위와 같이 rev의 초기값은 None에서 시작하고, 느린 런너가 이동하면서  1→ None, 2 → 1 → None과 같이 역순으로 연결된다.
 
 그리고 만약 연결리스트의 길이가 홀수이면 느린 런너가  팰린드롬인지 확인하기 위해  한칸 앞으로 이동한다.
 
