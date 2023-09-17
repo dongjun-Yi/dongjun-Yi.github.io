@@ -52,16 +52,8 @@ google_site_verification: # fill in to your verification string
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-# Analytics
-analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-150YKDBMTS"
-    anonymize_ip         : # true, false (default)
-
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: "G-150YKDBMTS"
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
