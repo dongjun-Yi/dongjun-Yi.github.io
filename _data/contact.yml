@@ -5,7 +5,14 @@
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  url: 'djyi0223@gmail.com' 
+
+- type: rss
+  icon: "fas fa-rss"
+  url: 'https://dongjun-yi.github.io'
+
+- type: instagram
+  icon: "fa-brands fa-instagram"
 
 
 # Uncomment and complete the url below to enable more contact options
