@@ -48,6 +48,24 @@
   <!-- ul.nav.flex-column -->
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github'%}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'email' %}
+          {%- capture url -%}
+            djyi0223@gmail.com
+          {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% else %}
+          {%- capture url -%}
+            djyi0223
+          {%- endcapture -%}
+      {% endcase %}
 
       {% if url %}
         <a
@@ -71,6 +89,7 @@
           <i class="{{ entry.icon }}"></i>
         </a>
       {% endif %}
+    {% endfor %}
   </div>
   <!-- .sidebar-bottom -->
 </div>

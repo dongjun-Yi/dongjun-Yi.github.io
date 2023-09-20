@@ -5,11 +5,9 @@
 
 - type: email
   icon: "fas fa-envelope"
-  url: 'djyi0223@gmail.com' 
 
 - type: rss
   icon: "fas fa-rss"
-  url: 'https://dongjun-yi.github.io'
 
 - type: instagram
   icon: "fab fa-instagram"
