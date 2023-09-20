@@ -58,7 +58,7 @@
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
           {%- capture url -%}
-            djyi0223@gmail.com
+            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}
