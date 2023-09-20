@@ -48,14 +48,6 @@
   <!-- ul.nav.flex-column -->
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-    {% for entry in site.data.contact %}
-      {% case entry.type %}
-        {% when 'github', 'twitter' %}
-          {%- capture url -%}
-            https://{{ entry.type }}.com/{{ site[entry.type].username }}
-          {%- endcapture -%}
-      {% endcase %}
 
       {% if url %}
         <a
