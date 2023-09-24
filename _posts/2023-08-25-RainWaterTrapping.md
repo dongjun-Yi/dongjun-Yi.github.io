@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-## 문제 조건
+## [문제](https://leetcode.com/problems/trapping-rain-water/){: target="_blank"}
 
 높이를 입력받아 비 온 후 얼마나 많은 물이 쌓일 수 있는지 계산하라.
 

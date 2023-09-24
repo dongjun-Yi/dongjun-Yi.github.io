@@ -6,9 +6,10 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-## 문제 조건
+## [문제](https://leetcode.com/problems/palindrome-linked-list/){: target="_blank"}
 
 연결 리스트가 팰린드롬 구조인지 판별하라.
+![Untitled.png](/assets/images/PalindromeList/Untitled.png)
 
 ## 입력
 

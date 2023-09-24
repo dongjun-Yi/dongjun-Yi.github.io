@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-## 문제 조건
+## [문제](https://leetcode.com/problems/longest-palindromic-substring/){: target="_blank"}
 
 가장 긴 팰린드롬 부분 문자열을 출력하라
 

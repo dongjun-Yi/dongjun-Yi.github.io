@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-## 문제 조건
+## [문제](https://leetcode.com/problems/product-of-array-except-self/){: target="_blank"}
 
 배열을 입력받아 output[i]가 자신을 제외한 나머지 모든 요소의 곱셈 결과가 되도록 출력하라.
 (단, 나눗셈을 사용하지 않고 O(n)에 풀이하라)

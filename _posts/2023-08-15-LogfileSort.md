@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-## 문제 조건
+## [문제](https://leetcode.com/problems/reorder-data-in-log-files/){: target="_blank"}
 
 로그를 재정렬하라. 기준은 다음과 같다.
 
