@@ -6,11 +6,11 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-[Leetcode merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/){: target="_blank"}
 
-## 문제 조건
+## [문제](https://leetcode.com/problems/merge-two-sorted-lists/){: target="_blank"}
 
 정렬되어 있는 두 연결 리스트를 합쳐라.
+![Untitled.png](/assets/images/MergeTwoLists/Untitled.png)
 
 ## 입력
 
