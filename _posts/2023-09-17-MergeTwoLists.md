@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
-{% linkpreview “https://leetcode.com/problems/merge-two-sorted-lists/description/Merge/” %}
+[Leetcode merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/){: target="_blank"}
 
 ## 문제 조건
 
