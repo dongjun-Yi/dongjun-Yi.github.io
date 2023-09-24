@@ -6,6 +6,8 @@ categories: [algorithm]
 tags: [algorithm, python]
 render_with_liquid: false
 ---
+{% linkpreview “https://leetcode.com/problems/merge-two-sorted-lists/description/Merge/” %}
+
 ## 문제 조건
 
 정렬되어 있는 두 연결 리스트를 합쳐라.
