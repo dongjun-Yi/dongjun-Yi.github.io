@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # hidden files
 .*
 !.git*
@@ -15,3 +16,6 @@ vendor
 # npm dependencies
 node_modules
 package-lock.json
+=======
+.DS_Store
+>>>>>>> 3fd38d9228f7302821671715d9b6ba1f5d92d1ba

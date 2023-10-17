@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
   # Chirpy Jekyll Theme
@@ -93,3 +94,7 @@ This work is published under [MIT][mit] License.
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
 [donation]: https://sponsor.cotes.page/
 [mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+=======
+# algorithm
+알고리즘 공부
+>>>>>>> 3fd38d9228f7302821671715d9b6ba1f5d92d1ba
