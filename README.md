@@ -1,19 +1,20 @@
 <<<<<<< HEAD
+
 <div align="center">
 
-  # Chirpy Jekyll Theme
+# Chirpy Jekyll Theme
 
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
-  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
+[![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&utm_medium=referral&utm_content=cotes2020/jekyll-theme-chirpy&utm_campaign=Badge_Grade)
+[![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
+[![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-  [**Live Demo →**][demo]
+[**Live Demo →**][demo]
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+[![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
 </div>
 
@@ -25,24 +26,24 @@
   </summary>
   <p>
 
-  - Dark / Light Theme Mode
-  - Localized UI language
-  - Pinned Posts
-  - Hierarchical Categories
-  - Trending Tags
-  - Table of Contents
-  - Last Modified Date of Posts
-  - Syntax Highlighting
-  - Mathematical Expressions
-  - Mermaid Diagram & Flowchart
-  - Dark / Light Mode Images
-  - Embed Videos
-  - Disqus / Utterances / Giscus Comments
-  - Search
-  - Atom Feeds
-  - Google Analytics
-  - Page Views Reporting
-  - SEO & Performance Optimization
+- Dark / Light Theme Mode
+- Localized UI language
+- Pinned Posts
+- Hierarchical Categories
+- Trending Tags
+- Table of Contents
+- Last Modified Date of Posts
+- Syntax Highlighting
+- Mathematical Expressions
+- Mermaid Diagram & Flowchart
+- Dark / Light Mode Images
+- Embed Videos
+- Disqus / Utterances / Giscus Comments
+- Search
+- Atom Feeds
+- Google Analytics
+- Page Views Reporting
+- SEO & Performance Optimization
 
   </p>
 </details>
@@ -93,8 +94,5 @@ This work is published under [MIT][mit] License.
 [lib]: https://github.com/cotes2020/chirpy-static-assets
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
 [donation]: https://sponsor.cotes.page/
-[mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
-=======
-# algorithm
-알고리즘 공부
->>>>>>> 3fd38d9228f7302821671715d9b6ba1f5d92d1ba
+
+# [mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
