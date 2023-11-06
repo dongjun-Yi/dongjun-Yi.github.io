@@ -24,7 +24,7 @@ class(class_id, course_id, year, semester, division, prof_id, classroom, enroll)
 select title
 from course
 where course_id in
-			(select distinct course_id from class where classromm = '301호')
+    (select distinct course_id from class where classromm = '301호')
 ```
 
 위의 SQL문에서 부 질의 키워드 `in` 뒤에 나오는 SQL문으로서 class 테이블에서 강의실이 ‘301호’인 교과목 번호를 검색한다. 키워드 `in`은 부 질의의 검색 결과에 포함되는 경우를 나타낸다. 따라서 외부 질의에서는 course 테이블에서 **course_id 필드의 값이 부 질의의 검색 결과에 포함되는 경우**에만 과목명을 출력하게 된다.
@@ -35,9 +35,9 @@ where course_id in
 select title
 from course
 where exists
-(select * 
-from class 
-where classromm = '301호' and course.course_id = class.course_id)
+    (select * 
+    from class 
+    where classromm = '301호' and course.course_id = class.course_id)
 ```
 
 `exists`는 최소한 하나 이상의 레코가 존재하면 참이 되고 그렇지 않으면 거짓이 된다. 따라서 부질의 검색 결과에 최소한 하나 이상의 레코드가 존재하는지의 여부를 표현할 수 있다.
@@ -55,7 +55,7 @@ where classromm = '301호' and course.course_id = class.course_id)
 select title
 from course
 where course_id in
-(select distinct course_id from class where classromm = '301호')
+    (select distinct course_id from class where classromm = '301호')
 ```
 
 먼저 `in`연산을 사용한 SQL에서 부 질의의 실행결과는 아래와 같을 것이다.
@@ -81,9 +81,9 @@ where course_id in
 select title
 from course
 where exists
-(select * 
-from class 
-where classromm = '301호' and course.course_id = class.course_id)
+    (select * 
+    from class 
+    where classromm = '301호' and course.course_id = class.course_id)
 ```
 
 `exists`는 `in` 구문과 다르게 **외부 쿼리에 먼저 접근하여 행 하나를 가져오고** `exists`**의 서브쿼리를 실행시켜 결과가 존재하는지를 판단**합니다.
@@ -102,8 +102,8 @@ where classromm = '301호' and course.course_id = class.course_id)
 <br><br>
 <aside>
 📖 references 
-데이터베이스의 이해 [이한미디어]
-[https://wildeveloperetrain.tistory.com/223](https://wildeveloperetrain.tistory.com/223)
+데이터베이스의 이해 [이한미디어]<br>
+[https://wildeveloperetrain.tistory.com/223](https://wildeveloperetrain.tistory.com/223)<br>
 [https://stackoverflow.com/questions/24929/difference-between-exists-and-in-in-sql](https://stackoverflow.com/questions/24929/difference-between-exists-and-in-in-sql)
 
 </aside>
