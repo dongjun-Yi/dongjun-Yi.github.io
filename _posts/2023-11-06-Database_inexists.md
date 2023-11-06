@@ -1,5 +1,5 @@
 ---
-title: "[데이터베이스] in과 exists 차이"
+title: "[데이터베이스] in과 exists 연산자 차이"
 author:
   name: dongjun-Yi
 categories: [database]
@@ -13,7 +13,7 @@ render_with_liquid: false
 `in`과 `exists`연산자는 중첩질의 중 하나인데, **중첩질의**란 SQL문을 다른 SQL문 안에 중첩하여 사용하는 질의를 의미한다. 이때 내부에 포함된 SQL문을 **부 질의**(sub query) 또는 **내부 질의**(inner query)라 하며 부 질의를 갖는 SQL문을 **외부 질의**(outer query)라고 한다.
 
 ```
-// 스키마
+스키마
 course(course_id, title, credit)
 class(class_id, course_id, year, semester, division, prof_id, classroom, enroll)
 ```
@@ -35,9 +35,9 @@ where course_id in
 select title
 from course
 where exists
-			(select * 
-			 from class 
-			 where classromm = '301호' and course.course_id = class.course_id)
+(select * 
+from class 
+where classromm = '301호' and course.course_id = class.course_id)
 ```
 
 `exists`는 최소한 하나 이상의 레코가 존재하면 참이 되고 그렇지 않으면 거짓이 된다. 따라서 부질의 검색 결과에 최소한 하나 이상의 레코드가 존재하는지의 여부를 표현할 수 있다.
@@ -51,11 +51,11 @@ where exists
 `in`연산은 부질의의 SQL문을 실행하면 `select`연산으로 만족하는 모든 행을 추출한 뒤 외부 질의를 하게되지만, `exists`연산은 부 질의의 SQL문을 실행하면 하나라도 만족하는 행이 있다면 SQL엔진은 더 이상 탐색하지 않고 **참 혹은 거짓을 반환하여 외부 질의**를 하게 된다. 위의 예를 가지고 살펴보자
 
 ```sql
-// in 연산
+-- in 연산
 select title
 from course
 where course_id in
-			(select distinct course_id from class where classromm = '301호')
+(select distinct course_id from class where classromm = '301호')
 ```
 
 먼저 `in`연산을 사용한 SQL에서 부 질의의 실행결과는 아래와 같을 것이다.
@@ -81,9 +81,9 @@ where course_id in
 select title
 from course
 where exists
-			(select * 
-			 from class 
-			 where classromm = '301호' and course.course_id = class.course_id)
+(select * 
+from class 
+where classromm = '301호' and course.course_id = class.course_id)
 ```
 
 `exists`는 `in` 구문과 다르게 **외부 쿼리에 먼저 접근하여 행 하나를 가져오고** `exists`**의 서브쿼리를 실행시켜 결과가 존재하는지를 판단**합니다.
@@ -99,7 +99,7 @@ where exists
 따라서 서브쿼리의 데이터가 작을 경우 `in` 구문과 `exists` 의 성능은 크게 차이가 없지만, 서브쿼리에 **조회되는 데이터가 많아질수록** `exists`연산자가 `in`에 비해 성능이 더 좋다.
 
 </aside>
-
+<br><br>
 <aside>
 📖 references 
 데이터베이스의 이해 [이한미디어]
