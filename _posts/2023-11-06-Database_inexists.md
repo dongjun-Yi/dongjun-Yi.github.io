@@ -77,7 +77,7 @@ where course_id in
 반면, `exists`연산을 다시 보면
 
 ```sql
-//exists
+-- exists 연산
 select title
 from course
 where exists
@@ -90,15 +90,13 @@ where exists
 
 서브쿼리의 결과가 true 인지 false 인지 체크하기 때문에 `exists`에서는 결과가 존재할 경우(= true) 메인 쿼리의 결과를 출력하고 `not exists`에서는 서브쿼리 내의 결과가 존재하지 않을 경우(= false) 메인 쿼리의 결과를 출력하게 된다.
 
-> `in`은 서브 쿼리 → 외부 쿼리 순으로 실행
+> `in`은 서브 쿼리 → 외부 쿼리 순으로 실행<br>
 `exists`는 외부 쿼리 → 서브 쿼리 순으로 실행
 > 
 
-<aside>
-💡 `in` 연산자는 **서브쿼리를 모두 검색**하고, `exists` **연산자는 찾을 때까지 검색**한다. 
+`in` 연산자는 **서브쿼리를 모두 검색**하고, `exists` **연산자는 찾을 때까지 검색**한다. 
 따라서 서브쿼리의 데이터가 작을 경우 `in` 구문과 `exists` 의 성능은 크게 차이가 없지만, 서브쿼리에 **조회되는 데이터가 많아질수록** `exists`연산자가 `in`에 비해 성능이 더 좋다.
 
-</aside>
 <br><br>
 <aside>
 📖 references 
