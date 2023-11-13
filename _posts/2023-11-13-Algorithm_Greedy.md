@@ -61,7 +61,7 @@ for coin in coin_types:
 <aside>
 📖 references 
 이것이 코딩테스다 with 파이썬 [한빛미디어]<br>
-https://www.youtube.com/watch?app=desktop&v=_IZuE7NIeW4]<br>
+[https://www.youtube.com/watch?app=desktop&v=_IZuE7NIeW4]<br>
 [https://velog.io/@contea95/탐욕법그리디-알고리즘]<br>
 [https://hanamon.kr/알고리즘-탐욕알고리즘-greedy-algorithm/]
 
