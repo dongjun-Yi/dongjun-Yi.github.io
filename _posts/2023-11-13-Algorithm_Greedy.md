@@ -6,7 +6,7 @@ categories: [algorithm]
 tags: [algorithm]
 render_with_liquid: false
 ---
-## ****탐욕 알고리즘(Greedy Algorithm)이란?****
+## **탐욕 알고리즘(Greedy Algorithm)이란?**
 
 ---
 
@@ -61,8 +61,8 @@ for coin in coin_types:
 <aside>
 📖 references 
 이것이 코딩테스다 with 파이썬 [한빛미디어]<br>
-[https://www.youtube.com/watch?app=desktop&v=_IZuE7NIeW4](https://www.youtube.com/watch?app=desktop&v=_IZuE7NIeW4)<br>
-[https://velog.io/@contea95/탐욕법그리디-알고리즘](https://velog.io/@contea95/%ED%83%90%EC%9A%95%EB%B2%95%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)<br>
-[https://hanamon.kr/알고리즘-탐욕알고리즘-greedy-algorithm/](https://hanamon.kr/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%83%90%EC%9A%95%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-greedy-algorithm/)
+https://www.youtube.com/watch?app=desktop&v=_IZuE7NIeW4]<br>
+[https://velog.io/@contea95/탐욕법그리디-알고리즘]<br>
+[https://hanamon.kr/알고리즘-탐욕알고리즘-greedy-algorithm/]
 
 </aside>
