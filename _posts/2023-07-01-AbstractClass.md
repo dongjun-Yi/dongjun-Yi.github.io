@@ -6,8 +6,7 @@ categories: [java]
 tags: [java]
 render_with_liquid: false
 ---
-## 추상클래스란?
-
+# 추상클래스란?
 ---
 
 클래스를 설계도에 비유한다면, **추상클래스는 미완성 설계도**에 비유할 수 있다. 즉, **미완성 메서드(추상메서드)를 포함하고 있는 클래스**라는 의미이다.
@@ -16,7 +15,7 @@ render_with_liquid: false
 abstract class 클래스이름{}
 ```
 
-## 추상메서드(abstract method)
+# 추상메서드(abstract method)
 
 ---
 
@@ -25,21 +24,21 @@ abstract class 클래스이름{}
 
 ```java
 abstract class Player { 
-			abstract void play(int pos);
-			abstract void stop();
+	abstract void play(int pos);
+	abstract void stop();
 }
 
 class AudioPlayer extends Player {
-			void play(int pos) { }
-			void stop() {}
+	void play(int pos) { }
+	void stop() {}
 }
 
 abstract class AbstractPlayer extends Player {
-			void play(int pos){}
+	void play(int pos){}
 }
 ```
 
-## 추상메서드로 선언하는 이유
+# 추상메서드로 선언하는 이유
 
 ---
 
@@ -47,27 +46,28 @@ abstract class AbstractPlayer extends Player {
 
 ```java
 abstract class Player {
-		boolean pause;
-		int currentPos;
+	boolean pause;
+	int currentPos;
 	
-		Player() {
-				pause = 0;
-				currentPos = 0;
-		}
+	Player() {
+		pause = 0;
+		currentPos = 0;
+	}
 
-		abstract void play(int pos);
-		abstract void stop();
+	abstract void play(int pos);
+	abstract void stop();
 		
-		void play() {
-				play(currentPos); //추상메서드를 사용할 수 있다.
-		}
+	void play() {
+		play(currentPos); //추상메서드를 사용할 수 있다.
+	}
+}
 ```
 
-사실 이 클래스는 추상클래스가 아닌 일반 클래스로 작성하여 abstract 메서드에는 아무내용 없는 메서드로 작성하면 된다. 근데 왜 굳이 abstract를 붙여서 추상 클래스를 사용하는걸까?
+사실 이 클래스는 추상클래스가 아닌 일반 클래스로 작성하여 `abstract` 메서드에는 아무내용 없는 메서드로 작성하면 된다. 근데 왜 굳이 `abstract`를 붙여서 추상 클래스를 사용하는걸까?
 
 그 이유는 **자손 클래스에서 추상메서드를 반드시 구현**하도록 강요하기 위해서이다.
 
-만일 추상메서드로 정의되어 있지 않고 위와 같이 빈 몸통만 가지도록 정의되어 있다면, 상속받는 자손 클래스에서는 이 메서드들이 온전히 구현된 것으로 인식하고 오버라이딩을 통해 자신의 클래스에 맞도록 구현하지 않을 수도 있기 때문이다! 그래서 추상메서드로 정의해놓으면, 자손 클래스를 작성할 때 이들이 추상메서드이므로 내용을 구현해주어야 한다는 사실을 인식하고 자신의 클래스에 알맞게 구현할 것이다.
+만일 추상메서드로 정의되어 있지 않고 위와 같이 빈 몸통만 가지도록 정의되어 있다면, **상속받는 자손 클래스에서는 이 메서드들이 온전히 구현된 것으로 인식하고 오버라이딩을 통해 자신의 클래스에 맞도록 구현하지 않을 수**도 있기 때문이다! 그래서 추상메서드로 정의해놓으면, 자손 클래스를 작성할 때 이들이 추상메서드이므로 내용을 구현해주어야 한다는 사실을 인식하고 자신의 클래스에 알맞게 구현할 것이다.
 
 <aside>
 📖 references Java의 정석(3판) [남궁 성/도우출판/2016]
