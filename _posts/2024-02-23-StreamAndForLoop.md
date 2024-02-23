@@ -6,7 +6,6 @@ categories: [java]
 tags: [java]
 render_with_liquid: false
 ---
-# Java Stream과 for 문
 
 자바 `Stream API`를 이용해 코드를 구성하면 다양한 데이터 소스를 일관성있게 다룰 수 있다는 장점이 있어 가독성을 향상시키는 효과를 준다. 그럼 `for문`과 `Stream API`를 이용한 **반복문은** 성능의 차이가 있을까?
 
@@ -81,7 +80,7 @@ sequential stream wrapped Type : 1876333ns
 
 ![Untitled.png](/assets/images/StreamAndForLoop/Untitled.png)
 
-이 자료는 Effective Java의 공저자인 Angelika Langer가 JAX London 2015에서 발표했던 ['The Performance Model of Streams in Java 8"](http://www.angelikalanger.com/Conferences/Videos/Conference-Video-GeeCon-2015-Performance-Model-of-Streams-in-Java-8-Angelika-Langer.html) 이라는 발표 자료 파일이다. 계산 비용을 크게 하기 위해 아파치 라이브러인 `slowSin()`을 이용할 수 있다. 이 메서드는 파라미터로 넘겨지는 메서드에 대해서 sin함수값을 이에 대한 테일러 급수를 계산하는 함수이다. 전과 같이 `int`타입의 배열과 `Integer` 타입에 대한 `ArrayList`를 10000개의 원소를 순회하여 `slowSin()`을 적용해보면 다음과 같다.
+이 자료는 Effective Java의 공저자인 Angelika Langer가 JAX London 2015에서 발표했던 ['The Performance Model of Streams in Java 8"](http://www.angelikalanger.com/Conferences/Videos/Conference-Video-GeeCon-2015-Performance-Model-of-Streams-in-Java-8-Angelika-Langer.html) 이라는 발표 자료 파일이다. 계산 비용을 크게 하기 위해 아파치 라이브러인 `slowSin()`을 이용할 수 있다. 이 메서드는 파라미터로 넘겨지는 메서드에 대해서 sin함수값을 취하고 이에 대한 테일러 급수를 계산하는 함수이다. 전과 같이 `int`타입의 배열과 `Integer` 타입에 대한 `ArrayList`를 10000개의 원소를 순회하여 `slowSin()`을 적용해보면 다음과 같다.
 
 ![Untitled.png](/assets/images/StreamAndForLoop/Untitled_1.png)
 
@@ -98,6 +97,7 @@ Angelika Langer가 JAX London 2015에서 발표했던 'The Performance Model of
 
 <aside>
 📖 references 
+<br>
 [[http://www.angelikalanger.com/Conferences/Videos/Conference-Video-GeeCon-2015-Performance-Model-of-Streams-in-Java-8-Angelika-Langer.html](http://www.angelikalanger.com/Conferences/Videos/Conference-Video-GeeCon-2015-Performance-Model-of-Streams-in-Java-8-Angelika-Langer.html)]
 <br>
 [[https://jaxlondon.com/wp-content/uploads/2015/10/The-Performance-Model-of-Streams-in-Java-8-Angelika-Langer-1.pdf](https://jaxlondon.com/wp-content/uploads/2015/10/The-Performance-Model-of-Streams-in-Java-8-Angelika-Langer-1.pdf)]
