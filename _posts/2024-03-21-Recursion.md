@@ -38,8 +38,8 @@ render_with_liquid: false
 
 ```c
 int resursiveFactorial(int n) {
-		// base case
-		if (n == 0) {
+    // base case
+    if (n == 0) {
         return 1;
     } else { 
         return n * recursiveFactorial(n - 1); // general case
@@ -55,11 +55,11 @@ int resursiveFactorial(int n) {
 
 ```c
 int iteraionFactorial(int n) {
-		int sum = 1;
-		for (int i = 1; i <= n; i++){
-				sum *= i;
-		}
-		return sum;
+	int sum = 1;
+	for (int i = 1; i <= n; i++){
+	    sum *= i;
+	}
+	return sum;
 }
 ```
 
@@ -73,6 +73,6 @@ int iteraionFactorial(int n) {
 
 <aside>
 📖 references <br>
-Richard F. Gilberg, Behrouz A. Forouzan - Data Structures_ A Pseudocode Approach with C-Cengage Learning (2004)
+Richard F. Gilberg, Behrouz A. Forouzan - Data Structures_ A Pseudocode Approach with C(2004)
 
 </aside>
