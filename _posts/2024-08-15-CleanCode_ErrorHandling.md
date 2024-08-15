@@ -8,7 +8,7 @@ render_with_liquid: false
 ---
 
 ## Use Exceptions Rather than Return Codes
-
+---
 **DeviceController.java**
 
 ```java
@@ -98,11 +98,11 @@ public List<RecordedGrip> retrieveSection(String sectionName) {
 ```java
 public List<RecordedGrip> retrieveSection(String sectionName) {
 	try {
-		FileInputStream stream = new FileInputStream(sectionName)
+	    FileInputStream stream = new FileInputStream(sectionName)
 	} catch (Exception e) {
-		throw new StorageException("retrieval error", e);
+	    throw new StorageException("retrieval error", e);
 	}
-		return new ArrayList<RecordedGrip>();
+	    return new ArrayList<RecordedGrip>();
 }
 ```
 
@@ -110,12 +110,11 @@ public List<RecordedGrip> retrieveSection(String sectionName) {
 
 ```java
 public List<RecordedGrip> retrieveSection(String sectionName) {
-
 	try {
-		FileInputStream stream = new FileInputStream(sectionName);
+	    FileInputStream stream = new FileInputStream(sectionName);
 		stream.close();
 	} catch (FileNotFoundException e) {
-		throw new StorageException("retrieval error”, e);
+	    throw new StorageException("retrieval error”, e);
 	}
 	return new ArrayList<RecordedGrip>();
 }
@@ -152,16 +151,16 @@ public List<RecordedGrip> retrieveSection(String sectionName) {
 ACMEPort port = new ACMEPort(12);
 
 try {
-	port.open();
+    port.open();
 } catch (DeviceResponseException e) {
-	reportPortError(e);
-	logger.log("Device response exception", e);
+    reportPortError(e);
+    logger.log("Device response exception", e);
 } catch (ATM1212UnlockedException e) {
-	reportPortError(e);
-	logger.log("Unlock exception", e);
+    reportPortError(e);
+    logger.log("Unlock exception", e);
 } catch (GMXError e) {
-	reportPortError(e);
-	logger.log("Device response exception");
+    reportPortError(e);
+    logger.log("Device response exception");
 } finally {
 	...
 }
@@ -172,33 +171,34 @@ try {
 LocalPort port = new LocalPort(12);
 
 t시ry {
-	port.open();
+    port.open();
 } catch (PortDeviceFailure e) {
-	reportError(e);
-	logger.log(e.getMessage(), e);
+    reportError(e);
+    logger.log(e.getMessage(), e);
 } finally {
 	...
 }
 
-	public class LocalPort {
+public class LocalPort {
 	private ACMEPort innerPort;
+
 	public LocalPort(int portNumber) {
-		innerPort = new ACMEPort(portNumber);
+	    innerPort = new ACMEPort(portNumber);
 	}
 
 	public void open() {
-			try {
-				innerPort.open();
-			} catch (DeviceResponseException e) {
-				throw new PortDeviceFailure(e);
-			} catch (ATM1212UnlockedException e) {
-				throw new PortDeviceFailure(e);
-			} catch (GMXError e) {
-				throw new PortDeviceFailure(e);
-			}
+		try {
+		    innerPort.open();
+		} catch (DeviceResponseException e) {
+		    throw new PortDeviceFailure(e);
+		} catch (ATM1212UnlockedException e) {
+    		    throw new PortDeviceFailure(e);
+		} catch (GMXError e) {
+		    throw new PortDeviceFailure(e);
 		}
-		...
 	}
+	...
+}
 ```
 
 위의 코드와 아래 코드를 비교해보면 위에 코드는 하나의 `try`문에 여러 `catch`문이 선언되어 있지만 두번째 코드에서는 Third-party Library를 이용한 API 안에 예외처리를 해두어 외부로부터 세부구현을 숨기고 실제 `port`를 `open`하는 로직에 대해서만 `try catch`문을 작성한 것이다. 이렇게 되면 코드를 더 간소화하고 예외를 발생시키는 클래스를 정의하여 어떤 예외가 발생하는 지를 명확하게 알 수 있다.
